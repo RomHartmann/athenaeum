@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 21 January 2019
+- https://devhints.io/makefile Makefile cheat sheet
 # 5 December 2018
 - https://waitbutwhy.com/2018/04/picking-career.html I need to revisit those tenticles
 - https://www.youtube.com/watch?v=I8BRdwgPChQ; https://www.youtube.com/watch?v=vvrxQ4M3EOo Very ellequently delivered talk about current trends in feminism and gender roles.

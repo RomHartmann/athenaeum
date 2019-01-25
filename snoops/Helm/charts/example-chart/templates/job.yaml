@@ -1,0 +1,27 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: {{ template "fullname" . }}
+  labels:
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
+spec:
+  template:
+    metadata:
+      annotations:
+        iam.amazonaws.com/role: {{ .Values.role_name }}
+      labels:
+        app: {{ template "fullname" . }}
+    spec:
+      restartPolicy: "Never"
+      containers:
+      - name: {{ .Chart.Name }}
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        args: ["python3", "main.py"]
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        env:
+        - name: RELEASE_NAME
+          value: "{{ .Release.Name }}"
+        - name: ENVIRONMENT
+          value: "{{ .Values.environment }}"
+        resources:
+{{ toYaml .Values.resources | indent 10 }}

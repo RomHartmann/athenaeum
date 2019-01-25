@@ -4,6 +4,9 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 25 January 2019
+- https://medium.com/personal-growth/do-you-believe-in-ethical-wealth-f194ab73cbd0 I recently had similar thoughts
+- https://medium.com/@ngoeke/self-improvement-has-made-me-worse-a4cc23e93e7a Things to be conscious about
 # 21 January 2019
 - https://devhints.io/makefile Makefile cheat sheet
 # 5 December 2018

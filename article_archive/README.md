@@ -5,6 +5,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 
 ---
 # 25 January 2019
+- https://towardsdatascience.com/the-10-most-useful-machine-learning-projects-of-the-past-year-2018-5378bbd4919f Useful machine learning projects of 2018.  
 - https://medium.com/personal-growth/do-you-believe-in-ethical-wealth-f194ab73cbd0 I recently had similar thoughts
 - https://medium.com/@ngoeke/self-improvement-has-made-me-worse-a4cc23e93e7a Things to be conscious about
 # 21 January 2019

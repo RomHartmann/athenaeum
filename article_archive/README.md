@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 26 January 2019
+- https://github.com/gunthercox/ChatterBot A chatbot ML library for python
 # 25 January 2019
 - https://towardsdatascience.com/the-10-most-useful-machine-learning-projects-of-the-past-year-2018-5378bbd4919f Useful machine learning projects of 2018.  
 - https://medium.com/personal-growth/do-you-believe-in-ethical-wealth-f194ab73cbd0 I recently had similar thoughts

@@ -5,6 +5,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 
 ---
 # 26 January 2019
+- https://www.kubeflow.org/ Create common ML deployments on Kubernetes quickly
 - https://github.com/gunthercox/ChatterBot A chatbot ML library for python
 # 25 January 2019
 - https://towardsdatascience.com/the-10-most-useful-machine-learning-projects-of-the-past-year-2018-5378bbd4919f Useful machine learning projects of 2018.  

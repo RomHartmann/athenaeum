@@ -19,3 +19,8 @@ These are investigations of varying depth into some technology.
 A place to put little personal side projects.  This can involve something I'm building
 or just code I played around with for some reason.
 
+
+# installed_repos
+
+A place where I've installed some git repos that I've needed.
+

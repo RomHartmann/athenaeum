@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 28 Janurary 2019
+- https://windsock.io/explaining-docker-image-ids/ How layers work for docker images
 # 26 January 2019
 - https://www.kubeflow.org/ Create common ML deployments on Kubernetes quickly
 - https://github.com/gunthercox/ChatterBot A chatbot ML library for python

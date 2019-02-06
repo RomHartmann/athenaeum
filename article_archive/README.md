@@ -5,6 +5,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 
 ---
 # 5 February 2019
+- http://jamie-wong.com/post/color/ A fantastic article describing color in digital world
 - https://medium.com/@svinkle/how-to-make-the-touch-bar-slightly-more-tolerable-857d29041f6a Set expanded control strip as default for Mac touch bar
 # 28 Janurary 2019
 - https://windsock.io/explaining-docker-image-ids/ How layers work for docker images

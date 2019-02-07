@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 7 Feburary 2019
+- https://github.com/kubernetes-sigs/aws-iam-authenticator A very nice look into how kubernetes deals with authentiaction into AWS IAM
 # 5 February 2019
 - https://media.readthedocs.org/pdf/cheat/latest/cheat.pdf Ansible cheat sheet
 - http://jamie-wong.com/post/color/ A fantastic article describing color in digital world
@@ -34,7 +36,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 # 18 November 2018
 - https://sunscrapers.com/blog/ultimate-tutorial-django-rest-framework-part-1/ Top down approach to django-rest_framework
 - https://rayed.com/posts/2018/05/django-crud-create-retrieve-update-delete/ Nice explanation of a simple CRUD for a django table using generic classes
-- https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python That second answer by the community is really great
+- https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python That second answer by the community is really great for python metaclasses
 # 15 November 2018
 - https://towardsdatascience.com/why-you-shouldnt-be-a-data-science-generalist-f69ea37cdd2c Nice breakup into different areas of data science
 # 14 November 2018

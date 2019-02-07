@@ -24,3 +24,10 @@ or just code I played around with for some reason.
 
 A place where I've installed some git repos that I've needed.
 
+
+# miscellaneous
+
+Small odds and ends that don't really fit anywhere else.
+
+
+

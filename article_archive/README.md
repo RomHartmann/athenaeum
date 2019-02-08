@@ -5,6 +5,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 
 ---
 # 7 Feburary 2019
+- https://realpython.com/python-logging/ Using 'exc_info' in a logging message is really neat.
 - https://github.com/kubernetes-sigs/aws-iam-authenticator A very nice look into how kubernetes deals with authentiaction into AWS IAM
 # 5 February 2019
 - https://media.readthedocs.org/pdf/cheat/latest/cheat.pdf Ansible cheat sheet

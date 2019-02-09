@@ -1,5 +1,11 @@
 # Useful Aliases
 
+## Python
+
+```bash
+alias unittest="python3.6 -m unittest discover -p '*_test.py'"
+```
+
 ### Docker
 
 ```bash

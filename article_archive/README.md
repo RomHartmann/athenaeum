@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 9 February 2019
+- https://www.youtube.com/watch?v=zbzT00Cyq-g chewing behaviour affecting dental and facial bone patterns. In short, lazy tongue and chewing causes bad teeth and weak face.
 # 7 Feburary 2019
 - https://realpython.com/python-logging/ Using 'exc_info' in a logging message is really neat.
 - https://github.com/kubernetes-sigs/aws-iam-authenticator A very nice look into how kubernetes deals with authentiaction into AWS IAM

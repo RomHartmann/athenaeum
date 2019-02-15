@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 15 Februrary 2019
+- https://medium.freecodecamp.org/so-whats-this-graphql-thing-i-keep-hearing-about-baf4d36c20cf A nice "what is the point of GraphQL" article
 # 9 February 2019
 - https://www.youtube.com/watch?v=zbzT00Cyq-g chewing behaviour affecting dental and facial bone patterns. In short, lazy tongue and chewing causes bad teeth and weak face.
 - https://www.youtube.com/watch?v=eh9OqEd5z1k, https://www.youtube.com/watch?v=Hmf-pR7EryY Technique to do "mewing"

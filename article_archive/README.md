@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 22 February 2019
+- https://pythonspeed.com/articles/faster-db-tests/ Writing DB tests using docker and writing to memory for speed
 # 15 Februrary 2019
 - https://medium.freecodecamp.org/so-whats-this-graphql-thing-i-keep-hearing-about-baf4d36c20cf A nice "what is the point of GraphQL" article
 # 9 February 2019

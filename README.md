@@ -8,6 +8,10 @@ My own little private library of code, articles etc.
 
 This is a long document with articles that I find interesting and want to keep.
 
+# infrastructure
+
+Patterns to set things up.
+
 
 # snoops
 

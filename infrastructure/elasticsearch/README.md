@@ -5,6 +5,8 @@ Elasticsearch
 
 https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html
 
+[And to set heap size](https://www.elastic.co/guide/en/elasticsearch/reference/current/heap-size.html)
+
 Everything is managed via the `Makefile`.
 
 
@@ -12,7 +14,7 @@ Everything is managed via the `Makefile`.
 
 ## UI
 
-A rudimentary UI is avaialable via the chrome extension `ElasticSearch Head`: chrome://extensions/?id=ffmkiejjmecolpfloofpjologoblkegm
+A rudimentary UI is avaialable via the chrome extension [ElasticSearch Head](chrome://extensions/?id=ffmkiejjmecolpfloofpjologoblkegm)
 
 This connects to ES on `http://localhost:9200/` by default.
 
@@ -145,3 +147,54 @@ query = {
 ret = ES.search(index=index, body=query)
 print(ret)
 ```
+
+To expand on that even more, here is a query if we want to have multi-level `inner_hits` and multi-level filters:
+
+
+```json
+{
+  "_source": ["pom_path", "event_datetime"],
+  "query": {
+    "nested": {
+      "path": "pom_elements",
+      "inner_hits": {
+        "_source": ["pom_elements.type", "pom_elements.id", "pom_elements.name", "pom_elements.content.html"]
+      },
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "nested": {
+                "path": "pom_elements.content",
+                "query": {
+                  "bool": {
+                    "must": [
+                      {"wildcard": {"pom_elements.content.html" : "*shopify*"}},
+                      {"bool": {
+                        "should": [
+                          {"match": {"pom_elements.content.html":  "buy_button"}},
+                          {"match": {"pom_elements.content.html":  "buy-button"}}
+                        ],
+                        "minimum_should_match": 1
+                      }}
+                    ],
+                    "must_not": [
+                      {"query_string":  {"query": "(pom_elements.content.html: \"sdks.shopifycdn.com\")"}}
+                    ]
+                  }
+                }
+              }
+            }
+          ],
+          "must_not": [
+            {"term": {"pom_elements.type" : "lp-stylesheet"}}
+          ],
+          "should": []
+        }
+      }
+    }
+  },
+  "sort": ["_id"]
+}
+```
+

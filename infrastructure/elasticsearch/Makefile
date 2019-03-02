@@ -16,3 +16,7 @@ destroy-cluster:
 inspect-cluster:
 	curl http://127.0.0.1:9200/_cat/health
 
+.PHONY: backup-data
+backup-data:
+	echo "TODO!"
+

@@ -198,3 +198,19 @@ To expand on that even more, here is a query if we want to have multi-level `inn
 }
 ```
 
+
+# Backing up an Index by creating a snapshot
+
+More work than it is worth right now, but here is a nice how-to
+
+https://blog.leandot.com/2017/03/04/create-elastic-search-snapshot-docker.html
+
+Or using another little service:
+
+https://github.com/webdestroya/elasticsearch-snapshot
+
+Or creating snapshots in S3
+
+https://hub.docker.com/r/heepster/docker-elasticsearch-s3-snapshot/
+
+

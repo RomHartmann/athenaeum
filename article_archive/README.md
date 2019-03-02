@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 1 March 2019
+- https://github.com/webdestroya/elasticsearch-snapshot Looks like a neat way to create elasticsearch snapshots.
 # 22 February 2019
 - https://pythonspeed.com/articles/faster-db-tests/ Writing DB tests using docker and writing to memory for speed
 # 15 Februrary 2019

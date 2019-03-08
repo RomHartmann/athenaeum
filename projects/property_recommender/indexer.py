@@ -6,12 +6,14 @@ The way this is set up is that enrichment modules can be added to the indexer as
 TODO:
 It can also check if any documents are missing information and then do enriching for what is missing.
 """
-import datetime
-import os
+import logging
 
 from elasticsearch import Elasticsearch
 
 from . import enrichers
+
+# TODO set?   format='%(asctime) %(filename)s:%(lineno)d %(levelname)s - %(message)s'
+logging.basicConfig(level=logging.INFO)
 
 
 class Indexer:

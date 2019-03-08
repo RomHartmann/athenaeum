@@ -19,6 +19,7 @@ At the moment we only ingest csv files.
 
 - Define latlongs of where you'd like to be and weight of its importance.
 - Cost requirements
+- Bedrooms etc
 - Square footage requirements
 - Room requirements
 - Pet requirements
@@ -30,6 +31,7 @@ Done:
 - nada
 
 Todo:
+- reverse geocoding
 - Latlong query comparison
 - google image processing of pictures
 

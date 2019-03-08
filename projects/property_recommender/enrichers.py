@@ -1,4 +1,5 @@
 """These are methods used to enrich the existing data for better recommendations."""
+import logging
 
 
 class BaseEnricher:

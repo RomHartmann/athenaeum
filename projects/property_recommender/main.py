@@ -18,7 +18,6 @@ def main():
         index_name="property",
         schema_name="property_listings"
     )
-    # indexer.bulk_index(es_data)
     for datum in es_data:
         indexer.index_document(datum)
 

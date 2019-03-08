@@ -32,6 +32,7 @@ enrichers:
     - ImageEnricher
 
 indexers:
+    - Bulk indexer
     - Update index for new enrichers and backfill for all. 
         - Also include 'updated_at' field in schema
 

@@ -79,16 +79,4 @@ class DefaultIndexer:
         :return: None
         :rtype: None
         """
-        body = []
-        for doc in docs:
-            body.append({
-                "_index": self.index_name,
-                "_type": self.schema_name,
-                "doc": doc,
-            })
-
-        self.es.bulk(
-            index=self.index_name,
-            doc_type=self.schema_name,
-            body=body
-        )
+        # TODO

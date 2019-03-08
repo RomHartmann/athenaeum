@@ -26,10 +26,17 @@ class CsvParser(BaseParser):
             data = csv.DictReader(f)
         return data
 
-    def deserialize(self, *args, **kwargs):
+    def deserialize(self, csv_item):
+        """Format each loaded csv row to elasticsearch format.
+
+        :param csv_item: Raw parsed csv.
+        :type csv_item: DictReader
+        :return: ES formatted data.
+        :rtype: dict
+        """
         raise NotImplementedError
 
-    def run(self, *args, **kwargs):
+    def run(self):
         raise NotImplementedError
 
 

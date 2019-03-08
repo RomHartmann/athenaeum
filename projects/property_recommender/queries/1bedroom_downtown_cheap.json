@@ -18,10 +18,12 @@
           ]
         }
       },
-      "boost_mode": "multiply",
-      "max_boost":  3,
-      "field_value_factor": {"field": "total_square_foot", "modifier": "log1p", "factor": 0.1, "missing":  1}
+      "functions": [
+        {"script_score" : {"script" : {"source": "Math.log(2 + doc['days_on_market'].value)"}}, "weight": 5},
+        {"exp": {"price": {"origin": "0", "scale": "50000", "offset": "350000", "decay" : 0.5}}, "weight": 50},
+        {"field_value_factor": {"field": "total_square_foot", "modifier": "sqrt", "factor": 1, "missing":  1}}
+      ],
+      "boost_mode": "multiply"
     }
   }
 }
-

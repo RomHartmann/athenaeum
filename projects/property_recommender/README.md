@@ -12,7 +12,8 @@ This requires a local elasticsearch cluster.  Please see `athenaeum/infrastructu
 
 ### Data formats
 
-At the moment we only ingest csv files.
+All formats that have parsers written:
+    - CSV
 
 
 ### Querying
@@ -25,22 +26,25 @@ At the moment we only ingest csv files.
 - Pet requirements
 
 
-### Under the Hood
+# TODOS
+enrichers:
+    - ReverseGeolocationEnricher
+    - ImageEnricher
 
-Done:
-- nada
+indexers:
+    - Update index for new enrichers and backfill for all. 
+        - Also include 'updated_at' field in schema
 
-Todo:
+parsers:
+    - fill do_validate_schema method
+    - Use generators instead of lists
+    - Build the ScraperParser
+
+
+Features:
 - reverse geocoding
 - Latlong query comparison
 - google image processing of pictures
-
-
-
-
-
-
-
 
 
 

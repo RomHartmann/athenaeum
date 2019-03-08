@@ -12,7 +12,6 @@ import json
 import time
 
 from elasticsearch import Elasticsearch
-from elasticsearch import helpers
 
 
 class DefaultIndexer:

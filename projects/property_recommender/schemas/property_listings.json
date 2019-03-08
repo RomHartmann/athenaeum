@@ -1,6 +1,6 @@
 {
   "mappings": {
-    "property_listing": {
+    "property_listings": {
       "properties": {
         "indexed_at": {"type":  "date"},
         "source_name": {"type":  "keyword"},
@@ -13,19 +13,19 @@
         "suburb": {"type":  "keyword"},
         "price": {"type":  "float"},
         "list_date": {"type":  "date"},
-        "days_on_market": {"type":  "int"},
-        "total_bedrooms": {"type":  "int"},
-        "total_baths": {"type":  "int"},
-        "total_square_foot": {"type":  "int"},
-        "year_built": {"type":  "int"},
-        "age": {"type":  "int"},
-        "locker": {"type":  "bool"},
-        "total_parking": {"type":  "int"},
+        "days_on_market": {"type":  "integer"},
+        "total_bedrooms": {"type":  "integer"},
+        "total_baths": {"type":  "integer"},
+        "total_square_foot": {"type":  "integer"},
+        "year_built": {"type":  "integer"},
+        "age": {"type":  "integer"},
+        "locker": {"type":  "boolean"},
+        "total_parking": {"type":  "integer"},
         "strat_fee": {"type":  "float"},
         "dwelling_type": {"type":  "keyword"},
         "bylaw_restrictions": {"type":  "text"},
-        "rent_allowed": {"type":  "bool"},
-        "pets_allowed": {"type":  "bool"}
+        "rent_allowed": {"type":  "boolean"},
+        "pets_allowed": {"type":  "boolean"}
       }
     }
   }

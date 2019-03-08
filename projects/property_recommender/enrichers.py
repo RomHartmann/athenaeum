@@ -12,6 +12,16 @@ class BaseEnricher:
         raise NotImplementedError
 
 
+class MonthlyCostEnricher(BaseEnricher):
+    """Given all costs, calculate the monthly cost."""
+
+    def __init__(self):
+        super().__init__()
+
+    def run(self):
+        pass  # TODO  (also add monthly_cost to schema)
+
+
 class ReverseGeolocationEnricher(BaseEnricher):
     """Given street address, reverse geolocate to get latlong."""
 

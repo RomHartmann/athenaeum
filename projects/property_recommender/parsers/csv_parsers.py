@@ -76,6 +76,7 @@ class MslParser(CsvParser):
         datetime_format = "%m/%d/%Y"
 
         es_data = {
+            "id": f"msl_{csv_item.get('ML #')}",
             "indexed_at": datetime.datetime.now(),
             "source_name": "MSL",
             "source_person": "Miguel Faulkner",

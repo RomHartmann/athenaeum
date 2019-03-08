@@ -1,0 +1,27 @@
+{
+  "_source": [
+    "listing_number", "status", "street_address", "suburb", "price", "list_date", "days_on_market",
+    "total_bedrooms", "total_baths", "total_square_foot", "year_built", "age", "locker", "total_parking", "strat_fee", "dwelling_type", "pets_allowed", "rent_allowed"
+  ],
+  "query": {
+    "function_score": {
+      "query": {
+        "bool": {
+          "must": [
+            {"range": {"total_parking": {"gte": "1"}}},
+            {"range": {"total_square_foot": {"gte": "600"}}}
+          ],
+          "must_not": [],
+          "should": [
+            {"range": {"total_square_foot": {"gte": "800"}}},
+            {"range": {"price": {"lte": "300000"}}}
+          ]
+        }
+      },
+      "boost_mode": "multiply",
+      "max_boost":  3,
+      "field_value_factor": {"field": "total_square_foot", "modifier": "log1p", "factor": 0.1, "missing":  1}
+    }
+  }
+}
+

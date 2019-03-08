@@ -34,9 +34,32 @@ class DefaultIndexer:
         self.schema = self.open_schema(schema_name)
 
         if not self.es.indices.exists(index_name):
-            logging.info(f"creating elasticsearch index for '{index_name}'")
-            self.es.indices.create(index=index_name, ignore=400, body=self.schema)
-            time.sleep(10)  # allow some time for index to be created
+            self.create_index()
+
+    def create_index(self, timeout=120):
+        """Create ES index if it does not exist, and don't proceed until index is up.
+
+        :param timeout: Amount of seconds to wait for index to be up.
+        :type timeout: int or float
+        :return: None
+        :rtype: None
+        """
+        logging.info(f"creating elasticsearch index for '{self.index_name}'")
+        self.es.indices.create(index=self.index_name, ignore=400, body=self.schema, request_timeout=timeout)
+
+        time_elapsed = 0
+        check_interval = 5
+        while True:
+            cluster_health = self.es.cluster.health()
+            if cluster_health.get('status') == "green":
+                logging.info("Index on cluster is ready.")
+                break
+
+            logging.info(f"Cluster not ready yet, waiting {check_interval}s...")
+            time.sleep(check_interval)  # allow some time for index to be created
+            time_elapsed += check_interval
+            if time_elapsed > timeout:
+                raise Exception(f"Creating index after {time_elapsed} has not yet resulted in healthy index.")
 
     @staticmethod
     def open_schema(schema_name):
@@ -66,9 +89,11 @@ class DefaultIndexer:
         :rtype: None
         """
         self.es.index(
+            id=doc.get("id"),
             index=self.index_name,
             doc_type=self.schema_name,
-            body=doc
+            body=doc,
+            request_timeout=20
         )
 
     def bulk_index(self, docs):

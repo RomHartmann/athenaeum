@@ -1,0 +1,29 @@
+{
+  "mappings": {
+    "property_listing": {
+      "properties": {
+        "indexed_at": {"type":  "date"},
+        "source_name": {"type":  "keyword"},
+        "source_company": {"type":  "keyword"},
+        "source_webhost": {"type":  "keyword"},
+        "posting_number": {"type":  "text"},
+        "status": {"type":  "keyword"},
+        "street_address": {"type":  "text"},
+        "suburb": {"type":  "keyword"},
+        "price": {"type":  "float"},
+        "list_date": {"type":  "date"},
+        "days_on_market": {"type":  "int"},
+        "total_bedrooms": {"type":  "int"},
+        "total_baths": {"type":  "int"},
+        "total_square_foot": {"type":  "int"},
+        "year_built": {"type":  "int"},
+        "age": {"type":  "int"},
+        "locker": {"type":  "bool"},
+        "total_parking": {"type":  "int"},
+        "strat_fee": {"type":  "float"},
+        "dwelling_type": {"type":  "keyword"},
+        "bylaw_restrictions": {"type":  "text"}
+      }
+    }
+  }
+}

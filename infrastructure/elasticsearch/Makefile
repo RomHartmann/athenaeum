@@ -1,19 +1,19 @@
-.PHONY: start-cluster
-start-cluster:
+.PHONY: start
+start:
 	docker-compose up
 
 
-.PHONY: stop-cluster
-stop-cluster:
+.PHONY: stop
+stop:
 	docker-compose down
 
 
-.PHONY: destroy-cluster
-destroy-cluster:
+.PHONY: destroy
+destroy:
 	docker-compose down -v
 
-.PHONY: inspect-cluster
-inspect-cluster:
+.PHONY: inspect
+inspect:
 	curl http://127.0.0.1:9200/_cat/health
 
 .PHONY: backup-data

@@ -9,8 +9,10 @@ It can also check if any documents are missing information and then do enriching
 import logging
 import os
 import json
+import time
 
 from elasticsearch import Elasticsearch
+from elasticsearch import helpers
 
 
 class DefaultIndexer:
@@ -33,8 +35,9 @@ class DefaultIndexer:
         self.schema = self.open_schema(schema_name)
 
         if not self.es.indices.exists(index_name):
-            logging.info(f"creating elasticsearch index for {index_name}")
+            logging.info(f"creating elasticsearch index for '{index_name}'")
             self.es.indices.create(index=index_name, ignore=400, body=self.schema)
+            time.sleep(10)  # allow some time for index to be created
 
     @staticmethod
     def open_schema(schema_name):
@@ -77,8 +80,16 @@ class DefaultIndexer:
         :return: None
         :rtype: None
         """
+        body = []
+        for doc in docs:
+            body.append({
+                "_index": self.index_name,
+                "_type": self.schema_name,
+                "doc": doc,
+            })
+
         self.es.bulk(
             index=self.index_name,
             doc_type=self.schema_name,
-            body=docs
+            body=body
         )

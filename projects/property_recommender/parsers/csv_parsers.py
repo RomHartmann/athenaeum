@@ -2,6 +2,7 @@
 import logging
 import datetime
 import csv
+import os
 
 from . import BaseParser
 
@@ -21,9 +22,14 @@ class CsvParser(BaseParser):
         :return: The csv as python list of dicts.
         :rtype: csv.DictReader
         """
-        logging.info(f"Loading up CSV from {self.file_path}")
+        # TODO use generator?
+        logging.info(f"Loading up CSV from {os.path.abspath(self.file_path)}")
         with open(self.file_path, 'r') as f:
-            data = csv.DictReader(f)
+            reader = csv.DictReader(f)
+            data = [d for d in reader]
+
+        logging.info(f"Loaded up {len(data)} rows from csv.")
+
         return data
 
     def deserialize(self, csv_item):
@@ -67,7 +73,7 @@ class MslParser(CsvParser):
         else:
             locker = False
 
-        datetime_format = "%-m/%-d/%Y"
+        datetime_format = "%m/%d/%Y"
 
         es_data = {
             "indexed_at": datetime.datetime.now(),
@@ -79,17 +85,17 @@ class MslParser(CsvParser):
             "status": csv_item.get("Status"),
             "street_address": csv_item.get("Address"),
             "suburb": csv_item.get("SUB/AREA"),
-            "price": float(csv_item.get("Price").replace("$", "")),
+            "price": float(csv_item.get("Price").replace("$", "").replace(",", "")),
             "list_date": datetime.datetime.strptime(csv_item.get("List Date"), datetime_format),
-            "days_on_market": int(csv_item.get("DOM")),
-            "total_bedrooms": int(csv_item.get("Tot BR")),
-            "total_baths": int(csv_item.get("Tot Baths")),
-            "total_square_foot": int(csv_item.get("TotFlArea")),
-            "year_built": int(csv_item.get("Yr Blt")),
-            "age": int(csv_item.get("Age")),
+            "days_on_market": int(csv_item.get("DOM") or 0),
+            "total_bedrooms": int(csv_item.get("Tot BR") or 0),
+            "total_baths": int(csv_item.get("Tot Baths") or 0),
+            "total_square_foot": int(csv_item.get("TotFlArea") or 0),
+            "year_built": int(csv_item.get("Yr Blt") or 0),
+            "age": int(csv_item.get("Age") or 0),
             "locker": locker,
-            "total_parking": int(csv_item.get("TotalPrkng")),
-            "strat_fee": float(csv_item.get("StratMtFee").replace("$", "")),
+            "total_parking": int(csv_item.get("TotalPrkng") or 0),
+            "strat_fee": float(csv_item.get("StratMtFee").replace("$", "").replace(",", "")),
             "dwelling_type": csv_item.get("TypeDwel"),
             "bylaw_restrictions": csv_item.get("Bylaw Restrictions"),
             "pets_allowed": False if "PETN" in csv_item.get("Bylaw Restrictions") else True,
@@ -102,13 +108,16 @@ class MslParser(CsvParser):
         return es_data
 
     def run(self):
-        """Load up CSV and format it format Elasticsearch.
+        """Load up CSV and format it for Elasticsearch.
 
         :return: Elasticsearch formatted payload containing all CSV rows.
         :rtype: list of dict
         """
+        # TODO use generators
         es_data = []
         for csv_item in self.data:
             es_data.append(self.deserialize(csv_item))
+
+        logging.info("Finished parsing csv rows")
 
         return es_data

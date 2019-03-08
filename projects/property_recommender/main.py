@@ -1,25 +1,26 @@
 """Script from where to run things from."""
 import logging
 
-from . import indexers
+import indexers
 from parsers import csv_parsers
 
-# TODO set?   format='%(asctime) %(filename)s:%(lineno)d %(levelname)s - %(message)s'
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.INFO, format='%(asctime)-15s %(filename)s:%(lineno)d %(levelname)s - %(message)s')
 
 
 def main():
-    indexer = indexers.DefaultIndexer(
-        index_name="property",
-        schema_name="property_listings"
-    )
 
     parser = csv_parsers.MslParser(
         file_path="data/msl_2019_03.csv"
     )
     es_data = parser.run()
 
-    indexer.bulk_index(es_data)
+    indexer = indexers.DefaultIndexer(
+        index_name="property",
+        schema_name="property_listings"
+    )
+    # indexer.bulk_index(es_data)
+    for datum in es_data:
+        indexer.index_document(datum)
 
 
 if __name__ == '__main__':

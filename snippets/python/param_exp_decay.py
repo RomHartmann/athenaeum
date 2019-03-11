@@ -6,6 +6,11 @@ import numpy as np
 def exp_decay(x0=0, y0=1, x1=200, y1=0.5):
     """Calculate the coefficients of an exponential decay function.
 
+    https://www.elastic.co/guide/en/elasticsearch/guide/current/decay-functions.html
+    https://www.elastic.co/guide/en/elasticsearch/reference/master/query-dsl-function-score-query.html#function-field-value-factor
+    https://www.elastic.co/guide/en/elasticsearch/guide/master/boosting-by-popularity.html
+    https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-types.html
+
     :param x0:
     :type x0:
     :param y0:
@@ -17,6 +22,7 @@ def exp_decay(x0=0, y0=1, x1=200, y1=0.5):
     :return:
     :rtype:
     """
+    pass
 
 def recip_params(x_max, y_max, y_min=1, x_left_shift=1):
     """Calculate the parameters for the Solr recip function.

@@ -20,7 +20,7 @@
       },
       "functions": [
         {"script_score" : {"script" : {"source": "Math.log(2 + doc['days_on_market'].value)"}}, "weight": 1},
-        {"exp": {"price": {"origin": "0", "scale": "200000", "offset": "0", "decay" : 0.5}}, "weight": 10},
+        {"exp": {"price": {"origin": "0", "scale": "350000", "offset": "0", "decay" : 0.5}}, "weight": 10},
         {"field_value_factor": {"field": "total_square_foot", "modifier": "sqrt", "factor": 1, "missing":  2}}
       ],
       "boost_mode": "multiply"

@@ -1,0 +1,9 @@
+{
+  "_source": ["account_uuid"],
+  "query": {
+    "nested": {
+      "path": "pom_elements",
+      "query": {"term": {"pom_elements.type" : "lp-pom-social-widget"}}
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "mappings": {
+    "POM": {
+      "properties": {
+        "pom_path": {"type": "keyword"},
+        "account_uuid": {"type": "keyword"},
+        "page_uuid": {"type": "keyword"},
+        "event_datetime": {"type": "date"},
+        "pom_elements": {
+          "type": "nested",
+          "properties": {
+            "name": {"type": "keyword"},
+            "id": {"type": "keyword"},
+            "type": {"type": "keyword"},
+            "content": {
+              "type": "nested",
+              "properties": {
+                "html": {"type": "text"},
+                "label": {"type": "keyword"},
+                "text": {"type": "text"},
+                "title": {"type": "text"}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

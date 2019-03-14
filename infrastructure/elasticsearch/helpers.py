@@ -24,10 +24,10 @@ es_logger.setLevel(logging.WARNING)
 def create_index(index_name):
     """Create index with the corresponding schema name in ./schemas.
 
-    :param index_name:
+    :param index_name: Name of index to create
     :type index_name: str
-    :return:
-    :rtype:
+    :return: None
+    :rtype: None
     """
     schema_path = os.path.join(
         os.path.dirname(os.path.abspath(__file__)),
@@ -44,12 +44,12 @@ def create_index(index_name):
 def reindex(old_index, new_index):
     """Reindex old index to new index.
 
-    :param old_index:
+    :param old_index: The name of the old index.
     :type old_index: str
-    :param new_index:
+    :param new_index: Name of the new index.
     :type new_index: str
-    :return:
-    :rtype:
+    :return: None
+    :rtype: None
     """
     logging.info(f"Reindexing {old_index} to {new_index}")
     res = ES.reindex(
@@ -67,7 +67,7 @@ def inplace_index(old_index, new_index):
     This is a way to deal with huge data.
 
     In case we get forbidden, try:
-        curl -X PUT "localhost:9200/<old_index>/_settings" -H 'Content-Type: application/json' -d'
+        curl -X PUT "localhost:9200/poms/_settings" -H 'Content-Type: application/json' -d'
         {
             "index": {
                 "blocks": {
@@ -76,13 +76,14 @@ def inplace_index(old_index, new_index):
             }
         }
         '
+    and also make sure that cluster has space.
 
-    :param old_index:
+    :param old_index: The name of the old index.
     :type old_index: str
-    :param new_index:
+    :param new_index: The name of the new index.
     :type new_index: str
-    :return:
-    :rtype:
+    :return: None
+    :rtype: None
     """
     logging.info(f"running a scan query over old index {old_index}")
     scan_size = 1000
@@ -95,7 +96,7 @@ def inplace_index(old_index, new_index):
 
     for i, doc in enumerate(res):
         if (i+1) % 1000 == 0:
-            logging.info(f"{i} documents reindexed.")
+            logging.info(f"{i+1} documents reindexed.")
         doc_id = doc.get("_id")
         doc_type = doc.get("_type")
         doc_body = doc.get("_source")
@@ -121,8 +122,8 @@ def dump_query_as_csv(index_name, query_filename, csv_headings):
     :type query_filename: str
     :param csv_headings: CSV headings.
     :type csv_headings: list of str
-    :return:
-    :rtype:
+    :return: None
+    :rtype: None
     """
     query_path = os.path.join(
         os.path.dirname(os.path.abspath(__file__)),
@@ -154,8 +155,81 @@ def dump_query_as_csv(index_name, query_filename, csv_headings):
             writer.writerow(row)
 
 
+def dump_query_as_nl_json(index_name, query_filename):
+    """Read query, execute and write newline delimited json with results.
+
+    This is useful to do a dumb backup of data.
+      It was especially useful to extract data that needed to be re-indexed, but the cluster was full.
+
+    :param index_name: Name of index to query.
+    :type index_name: str
+    :param query_filename: Filename to query.
+    :type query_filename: str
+    :return: None
+    :rtype: None
+    """
+    query_path = os.path.join(
+        os.path.dirname(os.path.abspath(__file__)),
+        "queries",
+        index_name,
+        f"{query_filename}.json"
+    )
+    logging.info(f"Loading query from {query_path}")
+    with open(query_path, 'r') as f:
+        query = json.load(f)
+
+    logging.info("running query.")
+    res = helpers.scan(
+        client=ES,
+        index=index_name,
+        query=query
+    )
+
+    nljson_filepath = os.path.join(
+        os.path.dirname(os.path.abspath(__file__)),
+        f"result_{index_name}_{query_filename}.json.nl"
+    )
+    logging.info(f"writing to file {nljson_filepath}")
+    with open(nljson_filepath, 'w') as f:
+        for i, doc in enumerate(res):
+            if (i+1) % 1000 == 0:
+                logging.info(f"{i+1} documents downloaded.")
+            f.write(f"{json.dumps(doc)}\n")
+
+
+def index_from_nl_json(query_filename, index_overwrite=None):
+    """Read a newline delimited json file and index documents.
+
+    :param query_filename: Filename to query.
+    :type query_filename: str
+    :param index_overwrite: To overwrite where to write data.
+    :type index_overwrite: None or str
+    :return: None
+    :rtype: None
+    """
+    nljson_filepath = os.path.join(
+        os.path.dirname(os.path.abspath(__file__)),
+        query_filename
+    )
+    logging.info(f"Reading from to file {nljson_filepath}")
+    with open(nljson_filepath, 'r') as f:
+        logging.info("iterating through file...")
+        for i, json_doc in enumerate(f):
+            if (i+1) % 1000 == 0:
+                logging.info(f"{i+1} documents loaded.")
+            doc = json.loads(json_doc)
+            ES.index(
+                index=index_overwrite or doc.get("_index"),
+                doc_type=doc.get("_type"),
+                body=doc.get("_source"),
+                id=doc.get("_id")
+            )
+
+
 if __name__ == '__main__':
     # create_index("poms")
     # reindex("ecomm", "poms")
     # dump_query_as_csv("ecomm", "socialwidget_grouped_userids", ["account_uuid"])
-    inplace_index("ecomm", "poms")
+    # inplace_index("ecomm", "poms")
+    dump_query_as_nl_json("poms", "everything")
+    # index_from_nl_json("result_ecomm_everything.json.nl", index_overwrite="poms")

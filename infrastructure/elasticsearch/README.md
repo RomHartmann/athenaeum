@@ -39,7 +39,7 @@ schema = {
         }
     }
 }
-es.indices.create(index='nested_ecomm', ignore=400, body=schema)
+es.indices.create(index='nested_poms', ignore=400, body=schema)
 ```
 
 ## How to data
@@ -91,47 +91,15 @@ ret.raise_for_status()
 
 ### A more complicated query
 
-A query for this schema
+Say we have the schema in `./schemas/poms.json`
 
-```python
-POM_SCHEMA = {
-    "mappings": {
-        "POM": {
-            "properties": {
-                "pom_path": {"type": "text"},
-                "account_uuid": {"type": "text"},
-                "page_uuid": {"type": "text"},
-                "event_datetime": {"type": "date"},
-                "pom_elements": {
-                    "type": "nested",
-                    "properties": {
-                        "name": {"type": "keyword"},
-                        "id": {"type": "text"},
-                        "type": {"type": "keyword"},
-                        "content": {
-                            "type": "nested",
-                            "properties": {
-                                "html": {"type": "text"},
-                                "label": {"type": "keyword"},
-                                "text": {"type": "text"},
-                                "title": {"type": "text"}
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-```
-
-where we only want to return the actual html entries would look like this
+If we only want to return the actual html entries the query would look like this
 ```python
 from elasticsearch import Elasticsearch
 ES = Elasticsearch(
     hosts=[{'host': 'localhost', 'port': 9200, 'use_ssl': False}]
 )
-index = "ecomm"
+index = "poms"
 query = {
   "_source" : ["pom_path", "event_datetime"],
   "query": {

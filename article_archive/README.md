@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 14 March 2019
+- http://ls.pwd.io/2013/06/parallel-s3-uploads-using-boto-and-threads-in-python/ A nice little simple use case for multithreading
 # 8 March 2019
 - https://www.elastic.co/blog/changing-mapping-with-zero-downtime Reindexind and changing mappings in Elasticsearch
 # 1 March 2019

@@ -1,4 +1,9 @@
-"""Functions to help with elasticsearch tasks."""
+"""Functions to help with elasticsearch tasks.
+
+To increase cluster size, Increase env vars "ES_JAVA_OPTS=-Xms3g -Xmx3g" for all elasticsearch services and then run:
+  curl -XPUT localhost:9200/_cluster/settings -H 'Content-Type: application/json' -d '{"persistent" : {"cluster.routing.allocation.disk.threshold_enabled": False}}'
+
+"""
 import logging
 import json
 import os
@@ -76,6 +81,7 @@ def inplace_index(old_index, new_index):
             }
         }
         '
+
     and also make sure that cluster has space.
 
     :param old_index: The name of the old index.
@@ -226,10 +232,13 @@ def index_from_nl_json(query_filename, index_overwrite=None):
             )
 
 
+
+
 if __name__ == '__main__':
     # create_index("poms")
     # reindex("ecomm", "poms")
     # dump_query_as_csv("ecomm", "socialwidget_grouped_userids", ["account_uuid"])
     # inplace_index("ecomm", "poms")
-    dump_query_as_nl_json("poms", "everything")
+    # dump_query_as_nl_json("poms", "everything")
     # index_from_nl_json("result_ecomm_everything.json.nl", index_overwrite="poms")
+    increase_cluster_size()

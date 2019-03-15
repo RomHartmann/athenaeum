@@ -1,0 +1,9 @@
+{
+  "query": {
+    "bool": {
+      "must": [
+        {"range": {"event_datetime": {"gte": "2019-01-26T18:21:49"}}}
+      ]
+    }
+  }
+}

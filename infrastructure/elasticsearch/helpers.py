@@ -1,13 +1,14 @@
 """Functions to help with elasticsearch tasks.
 
-To increase cluster size, Increase env vars "ES_JAVA_OPTS=-Xms3g -Xmx3g" for all elasticsearch services and then run:
-  curl -XPUT localhost:9200/_cluster/settings -H 'Content-Type: application/json' -d '{"persistent" : {"cluster.routing.allocation.disk.threshold_enabled": False}}'
+To increase cluster size, Increase env vars eg "ES_JAVA_OPTS=-Xms3g -Xmx3g" for all elasticsearch services and then run:
+  make rebalance
 
 """
 import logging
 import json
 import os
 import csv
+import argparse
 
 from elasticsearch import Elasticsearch, helpers
 
@@ -119,6 +120,23 @@ def inplace_index(old_index, new_index):
         )
 
 
+def delete_by_query(index, query):
+    """Delete items by query.
+
+    :param index: Index where docs are.
+    :type index: str
+    :param query: Query, which matched, deletes items.
+    :type query: dict
+    :return: None
+    :rtype: None
+    """
+    logging.info(f"Deleting by {query}")
+    ES.delete_by_query(
+        index=index,
+        body=query
+    )
+
+
 def dump_query_as_csv(index_name, query_filename, csv_headings):
     """Read query, execute and write csv with results.
 
@@ -161,7 +179,7 @@ def dump_query_as_csv(index_name, query_filename, csv_headings):
             writer.writerow(row)
 
 
-def dump_query_as_nl_json(index_name, query_filename):
+def dump_query_as_nl_json(index_name, query_filename, nljson_filepath=None):
     """Read query, execute and write newline delimited json with results.
 
     This is useful to do a dumb backup of data.
@@ -171,6 +189,8 @@ def dump_query_as_nl_json(index_name, query_filename):
     :type index_name: str
     :param query_filename: Filename to query.
     :type query_filename: str
+    :param nljson_filepath: Filename to where to save.
+    :type nljson_filepath: str
     :return: None
     :rtype: None
     """
@@ -191,16 +211,49 @@ def dump_query_as_nl_json(index_name, query_filename):
         query=query
     )
 
-    nljson_filepath = os.path.join(
-        os.path.dirname(os.path.abspath(__file__)),
-        f"result_{index_name}_{query_filename}.json.nl"
-    )
+    if not nljson_filepath:
+        nljson_filepath = os.path.join(
+            os.path.dirname(os.path.abspath(__file__)),
+            f"result_{index_name}_{query_filename}.json.nl"
+        )
     logging.info(f"writing to file {nljson_filepath}")
     with open(nljson_filepath, 'w') as f:
         for i, doc in enumerate(res):
             if (i+1) % 1000 == 0:
                 logging.info(f"{i+1} documents downloaded.")
             f.write(f"{json.dumps(doc)}\n")
+
+
+def backup_index(index_name, save_dir=None, datetime_field="event_datetime"):
+    """Read query, execute and write newline delimited json with results.
+
+    This is useful to do a dumb backup of data.
+      It was especially useful to extract data that needed to be re-indexed, but the cluster was full.
+
+    :param index_name: Name of index to query.
+    :type index_name: str
+    :param save_dir: Filename to where to save.
+    :type save_dir: str
+    :param datetime_field: Field used to find oldest and newest
+    :type datetime_field: str
+    :return: None
+    :rtype: None
+    """
+    min_res = ES.search(
+        index=index_name,
+        body={"_source": [datetime_field], "query": {"match_all": {}}, "sort": {datetime_field: "asc"}, "size": 1}
+    )
+    min_date = min_res.get("hits").get("hits")[0].get("_source").get(datetime_field)
+    max_res = ES.search(
+        index=index_name,
+        body={"_source": [datetime_field], "query": {"match_all": {}}, "sort": {datetime_field: "desc"}, "size": 1}
+    )
+    max_date = max_res.get("hits").get("hits")[0].get("_source").get(datetime_field)
+    filename = os.path.join(
+        save_dir or os.path.dirname(os.path.abspath(__file__)),
+        f"{min_date}_{max_date}.json.nl".replace(":", "")
+    )
+    dump_query_as_nl_json(index_name, "everything", filename)
 
 
 def index_from_nl_json(query_filename, index_overwrite=None):
@@ -232,13 +285,29 @@ def index_from_nl_json(query_filename, index_overwrite=None):
             )
 
 
-
-
 if __name__ == '__main__':
-    # create_index("poms")
-    # reindex("ecomm", "poms")
-    # dump_query_as_csv("ecomm", "socialwidget_grouped_userids", ["account_uuid"])
-    # inplace_index("ecomm", "poms")
-    # dump_query_as_nl_json("poms", "everything")
-    # index_from_nl_json("result_ecomm_everything.json.nl", index_overwrite="poms")
-    increase_cluster_size()
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument(
+        "index",
+        help="What index to work with"
+    )
+    parser.add_argument(
+        "--local_backup_dir",
+        default=None,
+        help="Filename where to back up to"
+    )
+    args = parser.parse_args()
+
+    if args.local_backup_dir:
+        backup_index(args.index, save_dir=args.local_backup_dir)
+
+    # create_index(args.index)
+    # reindex("ecomm", args.index)
+    # inplace_index("ecomm", args.index)
+    # dump_query_as_nl_json(args.index, "everything")
+    # index_from_nl_json("result_ecomm_everything.json.nl", index_overwrite=args.index)
+    # dump_query_as_csv(args.index, "socialwidget_grouped_userids", ["account_uuid", "page_uuid"])
+
+    # create_index(args.index)
+

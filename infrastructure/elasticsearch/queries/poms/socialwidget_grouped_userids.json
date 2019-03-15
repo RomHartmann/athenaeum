@@ -1,5 +1,5 @@
 {
-  "_source": ["account_uuid"],
+  "_source": ["account_uuid", "page_uuid"],
   "query": {
     "nested": {
       "path": "pom_elements",

@@ -251,7 +251,7 @@ def backup_index(index_name, save_dir=None, datetime_field="event_datetime"):
     max_date = max_res.get("hits").get("hits")[0].get("_source").get(datetime_field)
     filename = os.path.join(
         save_dir or os.path.dirname(os.path.abspath(__file__)),
-        f"{min_date}_{max_date}.json.nl".replace(":", "")
+        f"{index_name}_{min_date}_{max_date}.json.nl".replace(":", "")
     )
     dump_query_as_nl_json(index_name, "everything", filename)
 
@@ -309,5 +309,4 @@ if __name__ == '__main__':
     # index_from_nl_json("result_ecomm_everything.json.nl", index_overwrite=args.index)
     # dump_query_as_csv(args.index, "socialwidget_grouped_userids", ["account_uuid", "page_uuid"])
 
-    # create_index(args.index)
-
+    create_index(args.index)

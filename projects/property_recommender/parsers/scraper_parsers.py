@@ -41,41 +41,54 @@ class BcresParser(ScraperParser):
         """
         super().__init__(url)
 
-    def deserialize(self, page):
+    def deserialize(self, rep, url):
         """Parse and format each listing to elasticsearch format.
 
-        :param page: Beautiful Soup object containing the web content of the report.
-        :type page: bs4.element.Tag
+        :param rep: Beautiful Soup object containing the web content of the listing report.
+        :type rep: bs4.element.Tag
         :return: ES formatted data.
         :rtype: dict
         """
+        # import pdb; pdb.set_trace()
+        listing_number = rep.find('div', attrs={"style": "top:122px;left:4px;width:124px;height:13px;"}).text
+        bylaws = rep.find('div', attrs={"style": "top:816px;left:248px;width:210px;height:23px;"}).text
         es_data = {
-            "id": f"",
+            "id": f"msl_{listing_number}",
             "indexed_at": datetime.datetime.now(),
-            "url": "",
+            "url": url,
             "source_name": "bcres.paragonrels.com",
-            "source_person": "Miguel Faulkner",
-            "source_company": "Rennie",
+            "source_person": rep.find('div', attrs={"style": "top:21px;left:147px;width:463px;height:27px;"}).text,
+            "source_company": rep.find('div', attrs={"style": "top:45px;left:147px;width:463px;height:13px;"}).text,
             "source_webhost": "bcres",
-            "listing_number": csv_item.get("ML #"),
-            "status": csv_item.get("Status"),
-            "street_address": csv_item.get("Address"),
-            "suburb": csv_item.get("SUB/AREA"),
-            "price": float(csv_item.get("Price").replace("$", "").replace(",", "")),
-            "list_date": datetime.datetime.strptime(csv_item.get("List Date"), "%m/%d/%Y"),
-            "days_on_market": int(csv_item.get("DOM") or 0),
-            "total_bedrooms": int(csv_item.get("Tot BR") or 0),
-            "total_baths": int(csv_item.get("Tot Baths") or 0),
-            "total_square_foot": int(csv_item.get("TotFlArea") or 0),
-            "year_built": int(csv_item.get("Yr Blt") or 0),
-            "age": int(csv_item.get("Age") or 0),
-            "locker": locker,
-            "total_parking": int(csv_item.get("TotalPrkng") or 0),
-            "strat_fee": float(csv_item.get("StratMtFee").replace("$", "").replace(",", "")),
-            "dwelling_type": csv_item.get("TypeDwel"),
-            "bylaw_restrictions": csv_item.get("Bylaw Restrictions"),
-            "pets_allowed": False if "PETN" in csv_item.get("Bylaw Restrictions") else True,
-            "rent_allowed": False if "RENN" in csv_item.get("Bylaw Restrictions") else True
+            "listing_number": listing_number,
+            "status": rep.find('div', attrs={"style": "top:109px;left:4px;width:105px;height:13px;"}).text,
+            "construction": rep.find('div', attrs={"style": "top:396px;left:75px;width:286px;height:12px;"}).text,
+            "street_address": rep.find('div', attrs={"style": "top:110px;left:134px;width:482px;height:17px;"}).text,
+            "suburb": rep.find('div', attrs={"style": "top:126px;left:134px;width:481px;height:13px;"}).text,
+            "suburb_area": rep.find('div', attrs={"style": "top:139px;left:134px;width:480px;height:13px;"}),
+            "postal_code": rep.find('div', attrs={"style": "top:152px;left:132px;width:484px;height:13px;"}),
+            "price": float(rep.find('div', attrs={"style": "top:129px;left:555px;width:146px;height:13px;"}).text.replace("$", "").replace(",", "")),
+            "original_price": float(rep.find('div', attrs={"style": "top:171px;left:677px;width:88px;height:15px;"}).text.replace("$", "").replace(",", "")),
+            "list_date": None,
+            "days_on_market": None,
+            "total_bedrooms": int(rep.find('div', attrs={"style": "top:203px;left:530px;width:51px;height:13px;"}).text or 0),
+            "total_baths": int(rep.find('div', attrs={"style": "top:219px;left:530px;width:50px;height:13px;"}).text or 0),
+            "Basement": int(rep.find('div', attrs={"style": "top:840px;left:258px;width:199px;height:25px;"}).text or 0),
+            "total_square_foot": int(rep.find('div', attrs={"style": "top:840px;left:120px;width:50px;height:12px;"}).text or 0),
+            "fireplaces": int(rep.find('div', attrs={"style": "top:480px;left:330px;width:30px;height:13px;"}).text or 0),
+            "year_built": int(rep.find('div', attrs={"style": "top:187px;left:698px;width:39px;height:13px;"}).text or 0),
+            "age": int(rep.find('div', attrs={"style": "top:203px;left:698px;width:65px;height:13px;"}).text or 0),
+            "locker": rep.find('div', attrs={"style": "top:408px;left:603px;width:159px;height:12px;"}).text,
+            "total_parking": int(rep.find('div', attrs={"style": "top:384px;left:432px;width:20px;height:12px;"}).text or 0),
+            "strat_fee": float(rep.find('div', attrs={"style": "top:267px;left:530px;width:67px;height:13px;"}).text.replace("$", "").replace(",", "")),
+            "gross_taxes": float(rep.find('div', attrs={"style": "top:235px;left:698px;width:65px;height:13px;"}).text.replace("$", "").replace(",", "")),
+            "dwelling_type": rep.find('div', attrs={"style": "top:151px;left:4px;width:137px;height:15px;"}).text,
+            "bylaw_restrictions": bylaws,
+            "features": rep.find('div', attrs={"style": "top:591px;left:75px;width:689px;height:20px;"}).text,
+            "amenities": rep.find('div', attrs={"style": "top:556px;left:3px;width:53px;height:15px;"}).text,
+            "pets_allowed": False if "Pets Not Allowed" in bylaws else True,
+            "rent_allowed": False if "Rentals Not Allowed" in bylaws else True,
+            "description": rep.find('div', attrs={"style": "top:891px;left:4px;width:758px;height:75px;"}).text
         }
 
         if self.validate_schema:
@@ -94,7 +107,10 @@ class BcresParser(ScraperParser):
             listings = self.get_list_of_listings(self.url)
             for listing in listings:
                 listing_report = self.render_listing(browser, listing)
-                # es_data.append(self.deserialize(listing_report))
+                import pdb; pdb.set_trace()
+                listing_url = listing  # TODO
+                es_formatted_data = self.deserialize(listing_report, listing_url)
+                es_data.append(es_formatted_data)
 
         browser.quit()  # TODO make sure this happens
         return es_data

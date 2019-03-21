@@ -3,6 +3,7 @@
     "property_listings": {
       "properties": {
         "indexed_at": {"type":  "date"},
+        "url": {"type":  "keyword"},
         "source_name": {"type":  "keyword"},
         "source_person": {"type":  "keyword"},
         "source_company": {"type":  "keyword"},

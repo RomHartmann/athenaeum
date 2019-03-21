@@ -46,7 +46,7 @@ class CsvParser(BaseParser):
         raise NotImplementedError
 
 
-class MslParser(CsvParser):
+class MlsParser(CsvParser):
     """Parse CSVs from MSL source."""
 
     def __init__(self, file_path):
@@ -56,7 +56,6 @@ class MslParser(CsvParser):
         :type file_path: str
         """
         super().__init__(file_path)
-        self.file_path = file_path
 
     def deserialize(self, csv_item):
         """Format each loaded csv row to elasticsearch format.
@@ -73,8 +72,6 @@ class MslParser(CsvParser):
         else:
             locker = False
 
-        datetime_format = "%m/%d/%Y"
-
         es_data = {
             "id": f"msl_{csv_item.get('ML #')}",
             "indexed_at": datetime.datetime.now(),
@@ -87,7 +84,7 @@ class MslParser(CsvParser):
             "street_address": csv_item.get("Address"),
             "suburb": csv_item.get("SUB/AREA"),
             "price": float(csv_item.get("Price").replace("$", "").replace(",", "")),
-            "list_date": datetime.datetime.strptime(csv_item.get("List Date"), datetime_format),
+            "list_date": datetime.datetime.strptime(csv_item.get("List Date"), "%m/%d/%Y"),
             "days_on_market": int(csv_item.get("DOM") or 0),
             "total_bedrooms": int(csv_item.get("Tot BR") or 0),
             "total_baths": int(csv_item.get("Tot Baths") or 0),

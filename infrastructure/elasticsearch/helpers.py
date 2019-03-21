@@ -285,6 +285,40 @@ def index_from_nl_json(query_filename, index_overwrite=None):
             )
 
 
+def multithread_indexing(index, doc_type, docs_to_index):
+    """Multithreaded indexing to Elasticsearch.
+
+    :param index: Index name.
+    :type index: str
+    :param doc_type: doc_type property
+    :type doc_type: str
+    :param docs_to_index: An iterable of docs to index to ES.
+    :type docs_to_index: Iterable of dict
+    :return: None
+    :rtype: None
+    """
+    import time
+    from multiprocessing.pool import ThreadPool
+    nr_threads = 10
+    max_thead_queue_size = 5
+    pool = ThreadPool(processes=nr_threads)
+
+    for fetch_nr, doc in enumerate(docs_to_index):
+        fetch_nr += 1
+        if (fetch_nr+1) % 100 == 0:
+            logging.info(f"Indexing {fetch_nr+1}")
+
+        pool.apply_async(ES.index, kwargs={"index": index, "doc_type": doc_type, "body": doc})
+        while pool._taskqueue.qsize() > max_thead_queue_size:
+            time.sleep(0.1)
+
+    pool.close()
+    logging.info("waiting for processes to finish...")
+    pool.join()
+
+    logging.info(f"Done.")
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 

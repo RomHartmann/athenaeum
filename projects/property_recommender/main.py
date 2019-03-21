@@ -13,7 +13,7 @@ def main():
     #     file_path="data/mls_2019_03.csv"
     # )
     parser = scraper_parsers.BcresParser(
-        url="http://bcres.paragonrels.com/publink/default.aspx?GUID=d4a4c4b3-dd14-4e36-bbbf-923a7a9dd56b&Report=Yes"
+        url="https://bcres.paragonrels.com/publink/default.aspx?GUID=6f01a19a-b50f-4a34-9d08-9baef9db5121&Report=Yes"
     )
     es_data = parser.run()
 

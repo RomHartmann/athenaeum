@@ -54,3 +54,8 @@ class ImageEnricher(BaseEnricher):
         :rtype: str  # TODO?
         """
         pass  # TODO
+
+
+# TODO distance to skytrain enricher.
+
+

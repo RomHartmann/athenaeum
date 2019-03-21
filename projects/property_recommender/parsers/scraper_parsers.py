@@ -10,7 +10,6 @@ from bs4 import BeautifulSoup
 from . import BaseParser
 
 
-# TODO
 class ScraperParser(BaseParser):
     """Scrape a given site and parser for elasticsearch."""
 
@@ -105,7 +104,8 @@ class BcresParser(ScraperParser):
         with self.headless_render_page(self.url) as browser:
             listings = self.get_list_of_listings(self.url)
             for i, listing in enumerate(listings):
-                logging.info(f"Parsing listing number {i}/{len(listings)}:  {listing.attrs['id']}")
+                if (i+1) % 10 == 0:
+                    logging.info(f"Parsing listing number {i+1}/{len(listings)}:  {listing.attrs['id']}")
                 listing_report = self.render_listing(browser, listing)
                 es_formatted_data = self.deserialize(listing_report)
                 es_data.append(es_formatted_data)
@@ -196,4 +196,3 @@ class BcresParser(ScraperParser):
         browser.get(url)
 
         return browser
-

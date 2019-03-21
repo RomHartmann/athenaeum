@@ -1,8 +1,4 @@
 {
-  "_source": [
-    "listing_number", "status", "street_address", "suburb", "price", "list_date", "days_on_market",
-    "total_bedrooms", "total_baths", "total_square_foot", "year_built", "age", "locker", "total_parking", "strat_fee", "dwelling_type", "pets_allowed", "rent_allowed"
-  ],
   "query": {
     "function_score": {
       "query": {

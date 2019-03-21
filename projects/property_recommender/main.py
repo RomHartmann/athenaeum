@@ -17,14 +17,12 @@ def main():
     )
     es_data = parser.run()
 
-    print(es_data)
-
-    # indexer = indexers.DefaultIndexer(
-    #     index_name="property",
-    #     schema_name="property_listings"
-    # )
-    # for datum in es_data:
-    #     indexer.index_document(datum)
+    indexer = indexers.DefaultIndexer(
+        index_name="property",
+        schema_name="property_listings"
+    )
+    for datum in es_data:
+        indexer.index_document(datum)
 
 
 if __name__ == '__main__':

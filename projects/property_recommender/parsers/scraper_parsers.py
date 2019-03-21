@@ -41,7 +41,7 @@ class BcresParser(ScraperParser):
         """
         super().__init__(url)
 
-    def deserialize(self, rep, url):
+    def deserialize(self, rep):
         """Parse and format each listing to elasticsearch format.
 
         :param rep: Beautiful Soup object containing the web content of the listing report.
@@ -49,13 +49,12 @@ class BcresParser(ScraperParser):
         :return: ES formatted data.
         :rtype: dict
         """
-        # import pdb; pdb.set_trace()
         listing_number = rep.find('div', attrs={"style": "top:122px;left:4px;width:124px;height:13px;"}).text
         bylaws = rep.find('div', attrs={"style": "top:816px;left:248px;width:210px;height:23px;"}).text
         es_data = {
-            "id": f"msl_{listing_number}",
+            "id": f"bcres_{listing_number}",
             "indexed_at": datetime.datetime.now(),
-            "url": url,
+            "url": self.url,
             "source_name": "bcres.paragonrels.com",
             "source_person": rep.find('div', attrs={"style": "top:21px;left:147px;width:463px;height:27px;"}).text,
             "source_company": rep.find('div', attrs={"style": "top:45px;left:147px;width:463px;height:13px;"}).text,
@@ -65,27 +64,27 @@ class BcresParser(ScraperParser):
             "construction": rep.find('div', attrs={"style": "top:396px;left:75px;width:286px;height:12px;"}).text,
             "street_address": rep.find('div', attrs={"style": "top:110px;left:134px;width:482px;height:17px;"}).text,
             "suburb": rep.find('div', attrs={"style": "top:126px;left:134px;width:481px;height:13px;"}).text,
-            "suburb_area": rep.find('div', attrs={"style": "top:139px;left:134px;width:480px;height:13px;"}),
-            "postal_code": rep.find('div', attrs={"style": "top:152px;left:132px;width:484px;height:13px;"}),
+            "suburb_area": rep.find('div', attrs={"style": "top:139px;left:134px;width:480px;height:13px;"}).text,
+            "postal_code": rep.find('div', attrs={"style": "top:152px;left:132px;width:484px;height:13px;"}).text,
             "price": float(rep.find('div', attrs={"style": "top:129px;left:555px;width:146px;height:13px;"}).text.replace("$", "").replace(",", "")),
             "original_price": float(rep.find('div', attrs={"style": "top:171px;left:677px;width:88px;height:15px;"}).text.replace("$", "").replace(",", "")),
             "list_date": None,
             "days_on_market": None,
             "total_bedrooms": int(rep.find('div', attrs={"style": "top:203px;left:530px;width:51px;height:13px;"}).text or 0),
             "total_baths": int(rep.find('div', attrs={"style": "top:219px;left:530px;width:50px;height:13px;"}).text or 0),
-            "Basement": int(rep.find('div', attrs={"style": "top:840px;left:258px;width:199px;height:25px;"}).text or 0),
+            "Basement": rep.find('div', attrs={"style": "top:840px;left:258px;width:199px;height:25px;"}).text,
             "total_square_foot": int(rep.find('div', attrs={"style": "top:840px;left:120px;width:50px;height:12px;"}).text or 0),
             "fireplaces": int(rep.find('div', attrs={"style": "top:480px;left:330px;width:30px;height:13px;"}).text or 0),
             "year_built": int(rep.find('div', attrs={"style": "top:187px;left:698px;width:39px;height:13px;"}).text or 0),
             "age": int(rep.find('div', attrs={"style": "top:203px;left:698px;width:65px;height:13px;"}).text or 0),
-            "locker": rep.find('div', attrs={"style": "top:408px;left:603px;width:159px;height:12px;"}).text,
+            "locker": bool(rep.find('div', attrs={"style": "top:408px;left:603px;width:159px;height:12px;"}).text),
             "total_parking": int(rep.find('div', attrs={"style": "top:384px;left:432px;width:20px;height:12px;"}).text or 0),
             "strat_fee": float(rep.find('div', attrs={"style": "top:267px;left:530px;width:67px;height:13px;"}).text.replace("$", "").replace(",", "")),
             "gross_taxes": float(rep.find('div', attrs={"style": "top:235px;left:698px;width:65px;height:13px;"}).text.replace("$", "").replace(",", "")),
             "dwelling_type": rep.find('div', attrs={"style": "top:151px;left:4px;width:137px;height:15px;"}).text,
             "bylaw_restrictions": bylaws,
             "features": rep.find('div', attrs={"style": "top:591px;left:75px;width:689px;height:20px;"}).text,
-            "amenities": rep.find('div', attrs={"style": "top:556px;left:3px;width:53px;height:15px;"}).text,
+            "amenities": rep.find('div', attrs={"style": "top:556px;left:75px;width:691px;height:23px;"}).text,
             "pets_allowed": False if "Pets Not Allowed" in bylaws else True,
             "rent_allowed": False if "Rentals Not Allowed" in bylaws else True,
             "description": rep.find('div', attrs={"style": "top:891px;left:4px;width:758px;height:75px;"}).text
@@ -105,14 +104,12 @@ class BcresParser(ScraperParser):
         es_data = []
         with self.headless_render_page(self.url) as browser:
             listings = self.get_list_of_listings(self.url)
-            for listing in listings:
+            for i, listing in enumerate(listings):
+                logging.info(f"Parsing listing number {i}/{len(listings)}:  {listing.attrs['id']}")
                 listing_report = self.render_listing(browser, listing)
-                import pdb; pdb.set_trace()
-                listing_url = listing  # TODO
-                es_formatted_data = self.deserialize(listing_report, listing_url)
+                es_formatted_data = self.deserialize(listing_report)
                 es_data.append(es_formatted_data)
 
-        browser.quit()  # TODO make sure this happens
         return es_data
 
     @staticmethod
@@ -171,6 +168,7 @@ class BcresParser(ScraperParser):
         listing_content_raw = browser.page_source
         listing_soup = BeautifulSoup(listing_content_raw, 'html.parser')
         listing_report = listing_soup.find(id="divHtmlReport")
+        browser.switch_to.default_content()
 
         return listing_report
 
@@ -187,7 +185,7 @@ class BcresParser(ScraperParser):
         from selenium.webdriver.chrome.options import Options
 
         options = Options()
-        # options.headless = True  # TODO
+        options.headless = True
         chromedriver_path = os.path.join(
             os.path.dirname(os.path.abspath(__file__)),
             "drivers",

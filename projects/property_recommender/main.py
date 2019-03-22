@@ -2,28 +2,30 @@
 import logging
 
 import indexers
-from parsers import csv_parsers, scraper_parsers
+from parsers import scraper_parsers
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)-15s %(filename)s:%(lineno)d %(levelname)s - %(message)s')
 
+# Drop down very noisy ES logging
+es_logger = logging.getLogger('elasticsearch')
+es_logger.setLevel(logging.WARNING)
 
-def main():
 
-    # parser = csv_parsers.MlsParser(
-    #     file_path="data/mls_2019_03.csv"
-    # )
-    parser = scraper_parsers.BcresParser(
-        url="https://bcres.paragonrels.com/publink/default.aspx?GUID=6f01a19a-b50f-4a34-9d08-9baef9db5121&Report=Yes"
-    )
-    es_data = parser.run()
-
+def index_all_bcres():
     indexer = indexers.DefaultIndexer(
         index_name="property",
         schema_name="property_listings"
     )
-    for datum in es_data:
-        indexer.index_document(datum)
+
+    with open("data/bcres_urls.txt", 'r') as f:
+        for url in f:
+            logging.info(f"Reading URL = {url}")
+            parser = scraper_parsers.BcresParser(url=url)
+            es_data = parser.run()
+
+            for datum in es_data:
+                indexer.index_document(datum)
 
 
 if __name__ == '__main__':
-    main()
+    index_all_bcres()

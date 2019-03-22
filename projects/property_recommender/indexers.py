@@ -31,9 +31,9 @@ class DefaultIndexer:
         self.es = Elasticsearch(
             hosts=[{'host': 'localhost', 'port': 9200, 'use_ssl': False}]
         )
-        self.schema = self.open_schema(schema_name)
 
         if not self.es.indices.exists(index_name):
+            self.schema = self.open_schema(schema_name)
             self.create_index()
 
     def create_index(self, timeout=120):

@@ -20,7 +20,7 @@ class ScraperParser(BaseParser):
         :type url: str
         """
         super().__init__()
-        self.url = url
+        self.url = url.strip()
 
     def deserialize(self, *args, **kwargs):
         raise NotImplementedError
@@ -72,7 +72,7 @@ class BcresParser(ScraperParser):
             "total_bedrooms": int(rep.find('div', attrs={"style": "top:203px;left:530px;width:51px;height:13px;"}).text or 0),
             "total_baths": int(rep.find('div', attrs={"style": "top:219px;left:530px;width:50px;height:13px;"}).text or 0),
             "Basement": rep.find('div', attrs={"style": "top:840px;left:258px;width:199px;height:25px;"}).text,
-            "total_square_foot": int(rep.find('div', attrs={"style": "top:840px;left:120px;width:50px;height:12px;"}).text or 0),
+            "total_square_foot": int(rep.find('div', attrs={"style": "top:840px;left:120px;width:50px;height:12px;"}).text.replace(",", "") or 0),
             "fireplaces": int(rep.find('div', attrs={"style": "top:480px;left:330px;width:30px;height:13px;"}).text or 0),
             "year_built": int(rep.find('div', attrs={"style": "top:187px;left:698px;width:39px;height:13px;"}).text or 0),
             "age": int(rep.find('div', attrs={"style": "top:203px;left:698px;width:65px;height:13px;"}).text or 0),
@@ -105,7 +105,7 @@ class BcresParser(ScraperParser):
             listings = self.get_list_of_listings(self.url)
             for i, listing in enumerate(listings):
                 if (i+1) % 10 == 0:
-                    logging.info(f"Parsing listing number {i+1}/{len(listings)}:  {listing.attrs['id']}")
+                    logging.info(f"Parsing listing number {i+1}/{len(listings)}")
                 listing_report = self.render_listing(browser, listing)
                 es_formatted_data = self.deserialize(listing_report)
                 es_data.append(es_formatted_data)
@@ -121,7 +121,7 @@ class BcresParser(ScraperParser):
         :return: A list of all listings.
         :rtype: list of bs4.element.Tag
         """
-        logging.info(f"Fetching outer page from '{url}")
+        logging.info(f"Fetching outer page from {url}")
         outer_res = requests.get(url)
         outer_soup = BeautifulSoup(outer_res.content, 'html.parser')
 
@@ -131,9 +131,8 @@ class BcresParser(ScraperParser):
 
         parsed_outer_url = '/'.join(url.split('/')[0:-1])
         parsed_listings_src = f"{parsed_outer_url}/{listings_src}"
-        logging.info(f"Fetching frame page from '{parsed_listings_src}'")
+        logging.info(f"Fetching list of individual listings from '{parsed_listings_src}'")
 
-        logging.info("Fetching inner frame for listings")
         inner_resp = requests.get(parsed_listings_src)
         inner_soup = BeautifulSoup(inner_resp.content, 'html.parser')
 

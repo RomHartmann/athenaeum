@@ -24,6 +24,7 @@ def exp_decay(x0=0, y0=1, x1=200, y1=0.5):
     """
     pass
 
+
 def recip_params(x_max, y_max, y_min=1, x_left_shift=1):
     """Calculate the parameters for the Solr recip function.
 

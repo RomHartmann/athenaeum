@@ -22,7 +22,7 @@ def exp_decay(x0=0, y0=1, x1=200, y1=0.5):
     :return:
     :rtype:
     """
-    pass
+    pass  # TODO
 
 
 def recip_params(x_max, y_max, y_min=1, x_left_shift=1):
@@ -71,5 +71,4 @@ def recip_params(x_max, y_max, y_min=1, x_left_shift=1):
 
     params = namedtuple('Params', 'm a b')
     return params(m, a, b)
-# find these and then remove scoop and haram
 

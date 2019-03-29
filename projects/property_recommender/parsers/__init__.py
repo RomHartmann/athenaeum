@@ -25,6 +25,7 @@ class BaseParser:
         """
         # TODO
         # if not valid: raise SchemaNotValidError
+        pass
 
     def deserialize(self, *args, **kwargs):
         raise NotImplementedError

@@ -343,4 +343,5 @@ if __name__ == '__main__':
     # index_from_nl_json("result_ecomm_everything.json.nl", index_overwrite=args.index)
     # dump_query_as_csv(args.index, "socialwidget_grouped_userids", ["account_uuid", "page_uuid"])
 
-    create_index(args.index)
+    # create_index(args.index)
+

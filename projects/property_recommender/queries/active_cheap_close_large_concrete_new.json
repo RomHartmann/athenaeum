@@ -6,7 +6,8 @@
           "must": [
             {"match": {"status": "Active"}},
             {"range": {"total_parking": {"gte": "1"}}},
-            {"range": {"total_square_foot": {"gte": "600"}}}
+            {"range": {"total_square_foot": {"gte": "600"}}},
+            {"range": {"indexed_at": {"gte": "2019-03-22T00:00:00.000000"}}}
 
           ],
           "must_not": [],

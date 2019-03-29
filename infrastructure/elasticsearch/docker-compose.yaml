@@ -6,7 +6,7 @@ services:
     environment:
       - cluster.name=es-cluster
       - bootstrap.memory_lock=true
-      - "ES_JAVA_OPTS=-Xms3500m -Xmx3500m"
+      - "ES_JAVA_OPTS=-Xms3000m -Xmx3000m"
     ulimits:
       memlock:
         soft: -1
@@ -23,7 +23,7 @@ services:
     environment:
       - cluster.name=es-cluster
       - bootstrap.memory_lock=true
-      - "ES_JAVA_OPTS=-Xms3500m -Xmx3500m"
+      - "ES_JAVA_OPTS=-Xms3000m -Xmx3000m"
       - "discovery.zen.ping.unicast.hosts=elasticsearch"
     ulimits:
       memlock:

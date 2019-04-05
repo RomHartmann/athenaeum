@@ -1,4 +1,0 @@
-elasticsearch==6.3.1
-BeautifulSoup4==4.7.1
-requests==2.21.0
-selenium==3.141.0

@@ -5,6 +5,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 
 ---
 # 5 April 2019
+- https://medium.appbase.io/benchmarking-elasticsearch-1-million-writes-per-sec-bf37e7ca8a4c Benchmarking large Elasticsearch cluster.
 - https://www.datadoghq.com/blog/elasticsearch-performance-scaling-problems/ Optimizing Elasticsearch tricks
 # 29 March 2019
 - https://stlong0521.github.io/20161023%20-%20Airflow.html Going over a production Airflow setup.

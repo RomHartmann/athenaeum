@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 5 April 2019
+- https://www.datadoghq.com/blog/elasticsearch-performance-scaling-problems/ Optimizing Elasticsearch tricks
 # 29 March 2019
 - https://stlong0521.github.io/20161023%20-%20Airflow.html Going over a production Airflow setup.
 - http://airflow.apache.org/howto/executor/use-celery.html And the celery executor worker

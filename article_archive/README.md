@@ -4,7 +4,9 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
-# 14 April 2029
+# 16 April 2019
+- https://godaddy.github.io/2019/04/16/kubernetes-external-secrets/ External secrets in Kubernetes SSM
+# 14 April 2019
 - https://sizovs.net/2019/04/10/the-best-developers-are-raised-not-hired/ Build kick ass devs, don't try to hire them.
 # 5 April 2019
 - https://medium.appbase.io/benchmarking-elasticsearch-1-million-writes-per-sec-bf37e7ca8a4c Benchmarking large Elasticsearch cluster.

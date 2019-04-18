@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 18 April 2019
+- https://kb.iu.edu/d/aews A nice outline for how SSH (public) keys are set up.
 # 16 April 2019
 - https://godaddy.github.io/2019/04/16/kubernetes-external-secrets/ External secrets in Kubernetes SSM
 # 14 April 2019

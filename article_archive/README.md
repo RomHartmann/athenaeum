@@ -4,6 +4,10 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 31 May 2019
+- https://medium.com/free-code-camp/how-to-set-up-a-serious-kubernetes-terminal-dd07cab51cd4 Extra Kubernetes tools
+# 29 May 2019
+- https://aws.amazon.com/premiumsupport/knowledge-center/eks-cluster-kubernetes-dashboard/ Setting up Kubernetes dashboard.
 # 18 April 2019
 - https://kb.iu.edu/d/aews A nice outline for how SSH (public) keys are set up.
 # 16 April 2019

@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 19 June 2019
+- https://docs.travis-ci.com/user/private-dependencies/#api-token Good way to set up github permission for within Travis-scope
 # 31 May 2019
 - https://medium.com/free-code-camp/how-to-set-up-a-serious-kubernetes-terminal-dd07cab51cd4 Extra Kubernetes tools
 # 29 May 2019

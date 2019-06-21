@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 21 June 2019
+- https://stackoverflow.com/questions/15727420/using-python-logging-in-multiple-modules Using logging.logger
 # 19 June 2019
 - https://docs.travis-ci.com/user/private-dependencies/#api-token Good way to set up github permission for within Travis-scope
 # 31 May 2019

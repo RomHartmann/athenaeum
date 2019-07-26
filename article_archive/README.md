@@ -11,7 +11,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 - https://kubernetes.io/docs/concepts/overview/components/ High level view of Kubernetes backend components.
 - https://dev.framing.life/data/airflow-aws-lessons/ Airflow on AWS - How it should be deployed.
 - https://airflow.apache.org/kubernetes.html Using a Kubernetes Executor with Airflow
-- https://www.astronomer.io/guides/airflow-executors-explained/ Airflow terms explained
+- https://www.astronomer.io/guides/airflow-executors-explained/ Explaining different executors, including the KubernetesExecutor
 # 21 June 2019
 - https://stackoverflow.com/questions/15727420/using-python-logging-in-multiple-modules Using logging.logger
 # 19 June 2019

@@ -9,6 +9,8 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 - https://techcrunch-com.cdn.ampproject.org/v/s/techcrunch.com/2019/07/23/aws-launches-a-new-tool-to-help-you-optimize-your-ec2-resources/amp/?amp_js_v=0.1#referrer=https%3A%2F%2Fwww.google.com AWS cost optimisation
 - https://medium.com/@dominik.tornow/the-kubernetes-scheduler-cd429abac02f Kubernetes Scheduler explained
 - https://kubernetes.io/docs/concepts/overview/components/ High level view of Kubernetes backend components.
+- https://dev.framing.life/data/airflow-aws-lessons/ Airflow on AWS - How it should be deployed.
+
 # 21 June 2019
 - https://stackoverflow.com/questions/15727420/using-python-logging-in-multiple-modules Using logging.logger
 # 19 June 2019

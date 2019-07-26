@@ -6,6 +6,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 ---
 # 26 July 2019
 - https://www.julian.com/blog/mental-model-examples Mental models
+- https://techcrunch-com.cdn.ampproject.org/v/s/techcrunch.com/2019/07/23/aws-launches-a-new-tool-to-help-you-optimize-your-ec2-resources/amp/?amp_js_v=0.1#referrer=https%3A%2F%2Fwww.google.com AWS cost optimisation
 # 21 June 2019
 - https://stackoverflow.com/questions/15727420/using-python-logging-in-multiple-modules Using logging.logger
 # 19 June 2019

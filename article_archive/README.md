@@ -10,6 +10,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 - https://medium.com/@dominik.tornow/the-kubernetes-scheduler-cd429abac02f Kubernetes Scheduler explained
 - https://kubernetes.io/docs/concepts/overview/components/ High level view of Kubernetes backend components.
 - https://dev.framing.life/data/airflow-aws-lessons/ Airflow on AWS - How it should be deployed.
+- https://airflow.apache.org/kubernetes.html Using a Kubernetes Executor with Airflow
 
 # 21 June 2019
 - https://stackoverflow.com/questions/15727420/using-python-logging-in-multiple-modules Using logging.logger

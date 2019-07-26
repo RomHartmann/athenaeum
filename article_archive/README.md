@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 26 July 2019
+- https://www.julian.com/blog/mental-model-examples Mental models
 # 21 June 2019
 - https://stackoverflow.com/questions/15727420/using-python-logging-in-multiple-modules Using logging.logger
 # 19 June 2019

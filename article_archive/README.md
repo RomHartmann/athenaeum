@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 21 August 2019
+- https://chrisyeh96.github.io/2017/08/08/definitive-guide-python-imports.html Guide to python imports
 # 26 July 2019
 - https://www.julian.com/blog/mental-model-examples Mental models
 - https://techcrunch-com.cdn.ampproject.org/v/s/techcrunch.com/2019/07/23/aws-launches-a-new-tool-to-help-you-optimize-your-ec2-resources/amp/?amp_js_v=0.1#referrer=https%3A%2F%2Fwww.google.com AWS cost optimisation

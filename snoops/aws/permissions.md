@@ -40,6 +40,44 @@ For example, the data role:
 So I can assume data-role because it has a policy that allows the account I am (and my team is) in.
 
 
+# IAM Elements
+
+## Effect
+Valid values are `Allow` and `Deny`.
+By default access to resources is denied.  Explicit Deny overwrites Allow.
+
+## Action
+- The Action element describes the specific action or actions that will be allowed or denied.
+- Actions are case _insensitive_
+- Example: `"Action": ["s3:GetObject", "ec2:StartInstance", "iam:*"]"`
+  - The action keyword is followed by `<service namespace>:<name of action>`
+
+## Resource
+- The Resource element specifies the object or objects that the statement covers. 
+- You specify a resource using an ARN
+- eg:
+  - `"Resource": "arn:aws:iam::account-ID-without-hyphens:user/Bob"`
+  - `"Resource": ["arn:aws:s3:::my_bucket/*"]`
+ 
+
+## Principal
+- Use the Principal element to specify the IAM user/role/account/service etc that is allowed or denied access to a resource
+  - You cannot use the Principal element in an IAM identity-based policy
+  - You can use it in the trust policies for IAM roles and in resource-based policies
+- Uses:
+  - In IAM roles, use the Principal element in the role's trust policy to specify who can assume the role
+  - In resource-based policies, use the Principal element to specify the accounts or users who are allowed to access the resource
+- You specify a principal using the Amazon Resource Name (ARN)
+- eg: `"Principal": { "AWS": "arn:aws:iam::AWS-account-ID:user/user-name" }`
+
+
+## Condition
+- The Condition element (or Condition block) lets you specify conditions for when a policy is in effect. 
+- The Condition element is optional
+- eg: `"Condition" : { "StringEquals" : { "aws:username" : "johndoe" }}`
+
+
+
 # Lets do a run down of HTTPs and TSL again
 
 Purpose of TSL is to create a secure connection and make sure it is not interrupted without knowing and that

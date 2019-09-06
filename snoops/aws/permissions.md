@@ -176,36 +176,57 @@ personal `/config`
 apiVersion: v1
 clusters:
 - cluster:
-    certificate-authority: production.pem
-    server: https://k8s.hostname.blah
-  name: production
+    certificate-authority-data: TOKEN=
+    server: https://EA0AF39F611F87CC51EE923B68A05477.gr7.us-east-1.eks.amazonaws.com
+  name: arn:aws:eks:us-east-1:514588561872:cluster/unicorn
 - cluster:
-    certificate-authority: staging.pem
-    server: https://k8s-staging.hostname.blah
-  name: staging
+    certificate-authority-data: TOKEN=
+    server: https://C9C34CCCA7BD324259970F133B0EC535.sk1.us-east-1.eks.amazonaws.com
+  name: arn:aws:eks:us-east-1:514588561872:cluster/outset
 contexts:
 - context:
-    cluster: production
-    namespace: default
-    user: user.name
-  name: production
+    cluster: arn:aws:eks:us-east-1:514588561872:cluster/unicorn
+    user: arn:aws:eks:us-east-1:514588561872:cluster/unicorn
+  name: unicorn
 - context:
-    cluster: production
-    namespace: default
-    user: user.name
-  name: default
-- context:
-    cluster: staging
-    namespace: default
-    user: user.name
-  name: staging
-current-context: staging
+    cluster: arn:aws:eks:us-east-1:514588561872:cluster/outset
+    user: arn:aws:eks:us-east-1:514588561872:cluster/outset
+  name: outset
+current-context: outset
 kind: Config
 preferences: {}
 users:
-- name: user.name
+- name: arn:aws:eks:us-east-1:514588561872:cluster/unicorn
   user:
-    token: ACCESSTOKEN
+    exec:
+      apiVersion: client.authentication.k8s.io/v1alpha1
+      args:
+      - --region
+      - us-east-1
+      - eks
+      - get-token
+      - --cluster-name
+      - unicorn
+      command: aws
+      env:
+      - name: AWS_PROFILE
+        value: data
+- name: arn:aws:eks:us-east-1:514588561872:cluster/outset
+  user:
+    exec:
+      apiVersion: client.authentication.k8s.io/v1alpha1
+      args:
+      - --region
+      - us-east-1
+      - eks
+      - get-token
+      - --cluster-name
+      - outset
+      command: aws
+      env:
+      - name: AWS_PROFILE
+        value: data
+
 ```
 
 eks config: 

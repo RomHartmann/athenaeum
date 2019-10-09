@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 9 October 2019
+- https://www.youtube.com/watch?v=bGDMeD6kOz0 A very nice talk about AWS VPCs, Subnets and Security Groups
 # 4 October 2019
 - https://dev.to/bosepchuk/how-to-manage-programmers-without-losing-your-damn-mind-66c Basically a summary/recap of the book The Coaching Habit: Say Less, Ask More by Michael Bungay Stanier.  Repetitive book, but very useful.
 # 6 September 2019

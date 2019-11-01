@@ -29,6 +29,32 @@ Used to select objects and to find collections of objects that satisfy certain c
         - **Note:** `template` is a `podTemplate`
 - Selectors can have multiple targets
 
+Lets take for example
+```yaml
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  name: "myapp-deployment"
+  labels:
+    app: "myapp"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: "myapp"
+  template:
+    metadata:
+      labels:
+        app: "myapp"
+    spec:
+      containers:
+        - name: "myapp-pod"
+          image: myapp:latest
+```
+
+-  `spec.selector.matchLabels.app` joins deployment and pod:
+  - `metadata.labels.app`: label for the deployment
+  - `spec.template.metadata.labels.app`: label for the pods
 
 #### Note on NodeSelector vs Taints
 

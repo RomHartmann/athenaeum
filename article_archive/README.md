@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 10 Jan 2020
+- https://blog.pragmaticengineer.com/how-to-lead-a-project-in-software-development/ Good practices for Tech lead
 # 9 October 2019
 - https://www.youtube.com/watch?v=bGDMeD6kOz0 A very nice talk about AWS VPCs, Subnets and Security Groups
 # 4 October 2019

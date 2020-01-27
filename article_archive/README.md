@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 27 Jan 2020
+- https://github.com/derailed/k9s  K9s - A very nice CLI view into a cluster.
 # 10 Jan 2020
 - https://blog.pragmaticengineer.com/how-to-lead-a-project-in-software-development/ Good practices for Tech lead
 - https://blog.pragmaticengineer.com/scaling-engineering-teams-via-writing-things-down-rfcs/ RFC = Request for Comments.  A good way of planning new work.

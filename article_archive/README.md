@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 3 March 2020
+- https://docs.google.com/document/d/1kngKHUCS0DHNvZAO8PfkcsTD4Mq7b11L09RIaVpQnwI/edit#heading=h.dj481vc87f3 Project lead checklist
 # 21 Fet 2020
 - https://hackernoon.com/the-mvp-is-dead-long-live-the-rat-233d5d16ab02 RAT: Riskiest Assumption Test.  I think good for life and good for dev.
 # 27 Jan 2020

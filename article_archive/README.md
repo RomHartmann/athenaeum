@@ -8,6 +8,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 - https://github.com/sharkdp/fd Better alternative to `find`
 - https://snarky.ca/how-the-heck-does-async-await-work-in-python-3-5/ Nice article for async/await in python and also history of generators and coroutines
 - https://realpython.com/async-io-python/ A less theoretical and applicable tutorial to async/await
+- https://uwsgi-docs.readthedocs.io/en/latest/tutorials/Django_and_nginx.html WSGI, uWSGI and why nginx
 
 # 3 March 2020
 - https://docs.google.com/document/d/1kngKHUCS0DHNvZAO8PfkcsTD4Mq7b11L09RIaVpQnwI/edit#heading=h.dj481vc87f3 Project lead checklist

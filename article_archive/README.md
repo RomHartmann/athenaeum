@@ -4,6 +4,9 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 6 March 2020
+- https://github.com/sharkdp/fd Better alternative to `find`
+
 # 3 March 2020
 - https://docs.google.com/document/d/1kngKHUCS0DHNvZAO8PfkcsTD4Mq7b11L09RIaVpQnwI/edit#heading=h.dj481vc87f3 Project lead checklist
 # 21 Fet 2020

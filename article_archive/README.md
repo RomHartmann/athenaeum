@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 17 March 2020
+- https://towardsdatascience.com/a-better-way-for-asynchronous-programming-asyncio-over-multi-threading-3457d82b3295 Asyncio and multithreading benchmark and good code examples.
 # 6 March 2020
 - https://github.com/sharkdp/fd Better alternative to `find`
 - https://snarky.ca/how-the-heck-does-async-await-work-in-python-3-5/ Nice article for async/await in python and also history of generators and coroutines

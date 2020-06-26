@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 26 June 2020
+- https://devhints.io/makefile little Makefile cheat sheet 
 # 23 March 2020
 - https://opensource.com/article/17/4/grok-gil Explaining Multithreading and GIL 
 # 17 March 2020

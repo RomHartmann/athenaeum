@@ -4,7 +4,9 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
-# 27 July 2018
+# 6 August 2020
+- https://www.androidauthority.com/arm-vs-x86-key-differences-explained-568718/ ARM vs x64 and x86
+# 27 July 2020
 - https://medium.com/cloudwithmore/aws-athena-vs-google-bigquery-81a5e885d5c6 BigQuery vs Athena
 # 16 July 2020
 - https://botocore.amazonaws.com/v1/documentation/api/latest/reference/stubber.html Botocore.stub - mock calls to AWS resources.

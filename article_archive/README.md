@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 24 August 2020
+- https://www.serverless.com/aws-step-functions AWS Step functions
 # 21 August 2020
 - https://medium.com/@rchamarthi/aws-athena-notes-90a8e2554367 Notes for Athena
 - https://aws.amazon.com/blogs/big-data/top-10-performance-tuning-tips-for-amazon-athena/ Permormance tuning for Athena

@@ -8,6 +8,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 - https://www.serverless.com/aws-step-functions AWS Step functions
 - https://aws.amazon.com/step-functions/use-cases/ AWS Step functions use cases
 - https://epsagon.com/development/hitchhikers-guide-to-aws-step-functions/ A nice set of guidelines of when to use AWS Step functions
+- https://aws.amazon.com/blogs/big-data/best-practices-to-scale-apache-spark-jobs-and-partition-data-with-aws-glue/ Glue under the hood
 # 21 August 2020
 - https://medium.com/@rchamarthi/aws-athena-notes-90a8e2554367 Notes for Athena
 - https://aws.amazon.com/blogs/big-data/top-10-performance-tuning-tips-for-amazon-athena/ Permormance tuning for Athena

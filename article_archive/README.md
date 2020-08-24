@@ -6,6 +6,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 ---
 # 24 August 2020
 - https://www.serverless.com/aws-step-functions AWS Step functions
+- https://aws.amazon.com/step-functions/use-cases/ AWS Step functions use cases
 # 21 August 2020
 - https://medium.com/@rchamarthi/aws-athena-notes-90a8e2554367 Notes for Athena
 - https://aws.amazon.com/blogs/big-data/top-10-performance-tuning-tips-for-amazon-athena/ Permormance tuning for Athena

@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 29 August 2020
+- https://medium.com/@nandovillalba/why-i-think-gcp-is-better-than-aws-ea78f9975bda AWS vs GCP rant, and I agree GCP is better
 # 25 August 2020
 - http://www.afhalifax.ca/magazine/wp-content/sciences/vignettes/supernova/nature/MAREES/HistoireMarees.pdf History of tides
 # 24 August 2020

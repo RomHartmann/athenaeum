@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 3 September
+- https://www.infoq.com/presentations/netflix-five-level-ownership/ 5 levels of ownership at Netflix
 # 29 August 2020
 - https://medium.com/@nandovillalba/why-i-think-gcp-is-better-than-aws-ea78f9975bda AWS vs GCP rant, and I agree GCP is better
 # 25 August 2020

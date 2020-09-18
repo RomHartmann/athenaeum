@@ -5,6 +5,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 
 ---
 # 18 September 2020
+- https://softwarebyscience.com/very-short-functions-are-a-code-smell-an-overview-of-the-science-on-function-length/ Don't use very short functions
 - https://medium.com/@eric.sun_39815/rescue-to-distributed-file-system-2dd8abd5d80d Hudi, Delta lake, Iceberg comparison.
 - https://medium.com/swlh/apache-hudi-vs-delta-lake-295c019fe3c5 RDS MySQL > AWS DMS > S3 > Hudi vs DeltaLake
 # 3 September 2020

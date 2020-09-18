@@ -4,10 +4,10 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
-# 18 September
+# 18 September 2020
 - https://medium.com/@eric.sun_39815/rescue-to-distributed-file-system-2dd8abd5d80d Hudi, Delta lake, Iceberg comparison.
 - https://medium.com/swlh/apache-hudi-vs-delta-lake-295c019fe3c5 RDS MySQL > AWS DMS > S3 > Hudi vs DeltaLake
-# 3 September
+# 3 September 2020
 - https://www.infoq.com/presentations/netflix-five-level-ownership/ 5 levels of ownership at Netflix
 # 29 August 2020
 - https://medium.com/@nandovillalba/why-i-think-gcp-is-better-than-aws-ea78f9975bda AWS vs GCP rant, and I agree GCP is better

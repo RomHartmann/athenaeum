@@ -6,6 +6,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 ---
 # 1 October 2020
 - https://github.com/awsdocs/amazon-emr-release-guide/blob/master/doc_source/emr-hudi.md Docs for Hudi (for EMR) that are nicely laid out
+- https://hudi.apache.org/docs/quick-start-guide.html#pyspark-example Hudi pyspark
 # 18 September 2020
 - https://softwarebyscience.com/very-short-functions-are-a-code-smell-an-overview-of-the-science-on-function-length/ Don't use very short functions
 - https://medium.com/@eric.sun_39815/rescue-to-distributed-file-system-2dd8abd5d80d Hudi, Delta lake, Iceberg comparison.

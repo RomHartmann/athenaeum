@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 2 November 2020
+- https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onion-clean-cqrs-how-i-put-it-all-together/ Design patterns mashed together
 # 1 October 2020
 - https://docs.amazonaws.cn/en_us/emr/latest/ReleaseGuide/emr-hudi.html Docs for Hudi (for EMR) that are ok
 - https://hudi.apache.org/docs/quick-start-guide.html#pyspark-example Hudi pyspark

@@ -76,7 +76,54 @@ By default access to resources is denied.  Explicit Deny overwrites Allow.
 - The Condition element is optional
 - eg: `"Condition" : { "StringEquals" : { "aws:username" : "johndoe" }}`
 
+## Example IAM
 
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html
+
+```yaml
+Type: AWS::IAM::Role
+Properties: 
+  Description: "A description of the role"
+  AssumeRolePolicyDocument: 
+    Version: 2012-10-17
+    Statement:
+      - Action: [sts:AssumeRole]
+        Effect: Allow
+        Principal:
+          Service: [ec2.amazonaws.com]
+
+  ManagedPolicyArns: 
+    - 'arn:aws:iam::aws:policy/service-role/AmazonElasticMapReduceforEC2Role'
+
+  Policies: 
+    - PolicyName: S3Policy
+      PolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+          Action:
+            - s3:Describe*
+            - s3:Get*
+            - s3:List*
+          Resource:
+            - arn:aws:s3:::mybucket
+            - arn:aws:s3:::mybucket/*
+```
+- `AssumeRolePolicyDocument`: 
+    - = Trust relationship
+    - "The trust policy that is associated with this role. Trust policies define which entities can assume the role."
+    - Only associate one trust policy with a role
+    - `Action` - `Effect` - `Principal`: eg: `sts:AssumeRole - Allow - ec2.amazonaws.com`
+        - This means that `ec2` is allowed to assume this role
+            - The IAM entity, who owns the resources, assumes my role
+- `ManagedPolicyArns`: 
+    - Adds an existing set of Policies (which are managed by IAM)
+    - Can be attached in addition to Policies (below)
+    - For example, this policy `AmazonElasticMapReduceforEC2Role` gives access to CloudWatch, Dynamo, EC2, EMR, Glue etc 
+    - Thus this role is allowed access to those resources
+- `Policies`: 
+    - Exact permission of what the Role can do
+    - For example this role has read access to s3://mybucket
 
 # Lets do a run down of HTTPs and TSL again
 

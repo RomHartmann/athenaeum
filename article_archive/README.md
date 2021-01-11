@@ -5,6 +5,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 
 ---
 # 9 January 2021
+- https://a16z.com/2020/10/15/the-emerging-architectures-for-modern-data-infrastructure/ Conversion of Data lakes to traditional database patterns
 - https://searchengineland.com/a-deep-dive-into-bert-how-bert-launched-a-rocket-into-natural-language-understanding-324522 Description of the BERT framework
 - https://www.quantamagazine.org/the-busy-beaver-game-illuminates-the-fundamental-limits-of-math-20201210/ Honestly the best description of a turing machine I've ever groked
 # 2 November 2020

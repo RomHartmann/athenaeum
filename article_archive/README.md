@@ -5,7 +5,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 
 ---
 # 4 February 2021
-- https://hbr.org/2020/12/how-to-lead-when-your-team-is-exhausted-and-you-are-too Leading when the ecosystem is under strain
+- https://hbr.org/2020/12/how-to-lead-when-your-team-is-exhausted-and-you-are-too Leading when the ecosystem is under strain. Some great quotes in here.
 # 9 January 2021
 - https://a16z.com/2020/10/15/the-emerging-architectures-for-modern-data-infrastructure/ Conversion of Data lakes to traditional database patterns
 - https://searchengineland.com/a-deep-dive-into-bert-how-bert-launched-a-rocket-into-natural-language-understanding-324522 Description of the BERT framework

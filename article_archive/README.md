@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 11 February 2021
+- https://www.theatlantic.com/health/archive/2021/01/pandemic-goodbye-casual-friends/617839/ The loss of acquaintences and wider social network seems to hurt me more than most
 # 4 February 2021
 - https://hbr.org/2020/12/how-to-lead-when-your-team-is-exhausted-and-you-are-too Leading when the ecosystem is under strain. Some great quotes in here.
 # 9 January 2021

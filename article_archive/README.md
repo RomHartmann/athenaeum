@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 25 February 2021
+- https://about.gitlab.com/handbook/business-ops/data-team/platform/infrastructure/ GitLab Data Infrastructure. Pretty elaborate.
 # 11 February 2021
 - https://fs.blog/2017/12/maker-vs-manager/ Maker vs Manager schedules. I'm definitely both.
 - https://www.theatlantic.com/health/archive/2021/01/pandemic-goodbye-casual-friends/617839/ The loss of acquaintences and wider social network seems to hurt me more than most

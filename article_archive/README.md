@@ -6,6 +6,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 ---
 2 March 2021
 - https://medium.com/moveax/how-postgresql-replication-works-6288b3e6000e Replication in Postgres
+- https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html Subnets vs security groups
 # 25 February 2021
 - https://about.gitlab.com/handbook/business-ops/data-team/platform/infrastructure/ GitLab Data Infrastructure. Pretty elaborate.
 # 11 February 2021

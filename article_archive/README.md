@@ -4,7 +4,9 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
-2 March 2021
+# 11 March 2021
+- https://github.com/GoogleCloudPlatform/spark-on-k8s-operator/blob/master/docs/quick-start-guide.md Spark Operator in Kubernetes
+# 2 March 2021
 - https://medium.com/moveax/how-postgresql-replication-works-6288b3e6000e Replication in Postgres
 - https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html Subnets vs security groups
 # 25 February 2021

@@ -6,7 +6,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 ---
 # 12 March 2021
 - https://hbr.org/1993/09/why-incentive-plans-cannot-work Good narrative but thingly substantiated article on why incentive plans don't work
-- http://conference.iza.org/conference_files/SUMS_2015/warnke_a21760.pdf Paper on incentives decreasing intrinsic motivation
+- http://conference.iza.org/conference_files/SUMS_2015/warnke_a21760.pdf Paper on incentives decreasing intrinsic motivation for creative tasks
 # 11 March 2021
 - https://realpython.com/intro-to-pyenv/#virtual-environments-and-pyenv Ok, `pyenv virtualenv` looks like it might be better than virtualenvwrapper
 - https://github.com/GoogleCloudPlatform/spark-on-k8s-operator/blob/master/docs/quick-start-guide.md Spark Operator in Kubernetes

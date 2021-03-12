@@ -5,6 +5,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 
 ---
 # 11 March 2021
+- https://realpython.com/intro-to-pyenv/#virtual-environments-and-pyenv Ok, `pyenv virtualenv` looks like it might be better than virtualenvwrapper
 - https://github.com/GoogleCloudPlatform/spark-on-k8s-operator/blob/master/docs/quick-start-guide.md Spark Operator in Kubernetes
 # 2 March 2021
 - https://medium.com/moveax/how-postgresql-replication-works-6288b3e6000e Replication in Postgres

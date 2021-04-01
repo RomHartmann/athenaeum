@@ -5,7 +5,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 
 ---
 # 1 April 2021
-- https://argoproj.github.io/argo-workflows/examples/ Kubernetes Argo Workflows. Looks like a nice replacement for Airflow for smaller DAGs that require higher performance
+- https://argoproj.github.io/argo-workflows/examples/ Kubernetes Argo Workflows. Looks like a nice replacement for Airflow for smaller DAGs that require higher performance. Looks like a good implementation of what Harambee orchestrator did.
 # 12 March 2021
 - https://hbr.org/1993/09/why-incentive-plans-cannot-work Good narrative but thingly substantiated article on why incentive plans don't work
 # 11 March 2021

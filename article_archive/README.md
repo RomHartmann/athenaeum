@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 21 April 2021
+- https://www.nytimes.com/2021/04/19/well/mind/covid-mental-health-languishing.html Laungusing. The cure is focus & flow
 # 1 April 2021
 - https://argoproj.github.io/argo-workflows/examples/ Kubernetes Argo Workflows. Looks like a nice replacement for Airflow for smaller DAGs that require higher performance. Looks like a good implementation of what Harambee orchestrator did.
 - https://github.com/argoproj/argo-workflows Github for Argo Workflows.

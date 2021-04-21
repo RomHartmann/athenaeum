@@ -6,6 +6,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 ---
 # 21 April 2021
 - https://www.nytimes.com/2021/04/19/well/mind/covid-mental-health-languishing.html Laungusing. The cure is focus & flow
+- https://ideas.ted.com/try-these-two-smart-techniques-to-help-you-master-your-emotions/ Emotional granularity. Specifically identify emotions, and name them aloud
 # 1 April 2021
 - https://argoproj.github.io/argo-workflows/examples/ Kubernetes Argo Workflows. Looks like a nice replacement for Airflow for smaller DAGs that require higher performance. Looks like a good implementation of what Harambee orchestrator did.
 - https://github.com/argoproj/argo-workflows Github for Argo Workflows.

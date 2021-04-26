@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 26 April 2021
+- https://github.com/casey/just Just is similar to Makefile, but dedicated to running commands. 
 # 21 April 2021
 - https://www.nytimes.com/2021/04/19/well/mind/covid-mental-health-languishing.html Laungusing. The cure is focus & flow
 - https://ideas.ted.com/try-these-two-smart-techniques-to-help-you-master-your-emotions/ Emotional granularity. Specifically identify emotions, and name them aloud

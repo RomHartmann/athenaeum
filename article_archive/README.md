@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 11 May 2021
+- https://www.cbc.ca/news/business/tuesday-most-productive-day-of-the-week-1.5260091 Tuesday, Monday mornings are most productive. 
 # 26 April 2021
 - https://github.com/casey/just Just is similar to Makefile, but dedicated to running commands. 
 # 21 April 2021

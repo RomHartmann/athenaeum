@@ -19,6 +19,8 @@ Index is is a segregation and sorting of data on keys, such that we can find dat
 
 ### B+ Tree index
 
+https://sqlity.net/en/2445/b-plus-tree/
+
 In general databases implement a "B+ tree".  It is a tree algorith that separates and sorts data according to some
 property of the key (eg integer size buckets, or first letter of string etc.)
 

@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 8 June 2021
+- http://www.engineeringladders.com/Developer.html#d1---developer-1 A framework for categorizing seniority of developers
 # 25 May 2021
 - https://www.youtube.com/watch?v=HeQX2HjkcNo&ab_channel=Veritasium It appears to not be possible to model chemistry out of perfectly understood physics
 # 11 May 2021

@@ -6,6 +6,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 ---
 # 17 June 2021
 - https://towardsdatascience.com/static-code-analysis-for-python-bdce10b8d287 Static code analysis in python
+- https://github.com/inasafe/inasafe/wiki/How-to-write-an-RFC RFC guide
 # 8 June 2021
 - http://www.engineeringladders.com/Developer.html#d1---developer-1 A framework for categorizing seniority of developers
 # 25 May 2021

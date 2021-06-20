@@ -21,6 +21,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 # 1 April 2021
 - https://argoproj.github.io/argo-workflows/examples/ Kubernetes Argo Workflows. Looks like a nice replacement for Airflow for smaller DAGs that require higher performance. Looks like a good implementation of what Harambee orchestrator did.
 - https://github.com/argoproj/argo-workflows Github for Argo Workflows.
+- https://www-zdnet-com.cdn.ampproject.org/v/s/www.zdnet.com/google-amp/article/new-relic-open-sources-pixie-its-kubernetes-native-in-cluster-observability-platform/?amp_js_v=a6 Pixie - Kubernetes observability platform
 # 12 March 2021
 - https://hbr.org/1993/09/why-incentive-plans-cannot-work Good narrative but thingly substantiated article on why incentive plans don't work
 # 11 March 2021

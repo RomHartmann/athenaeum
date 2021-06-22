@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 22 June 2021
+- https://github.com/Azure/AzureDatabricksBestPractices/blob/master/toc.md Best practices for Azure Databricks
 # 17 June 2021
 - https://towardsdatascience.com/static-code-analysis-for-python-bdce10b8d287 Static code analysis in python
 - https://github.com/inasafe/inasafe/wiki/How-to-write-an-RFC RFC guide

@@ -6,6 +6,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 ---
 # 22 June 2021
 - https://github.com/Azure/AzureDatabricksBestPractices/blob/master/toc.md Best practices for Azure Databricks
+- https://www.zdnet.com/article/databricks-cofounders-next-act-shining-a-ray-on-compute-autoscaling/ Ray - Serverless autoscaling for ML model training aimed at python
 # 17 June 2021
 - https://towardsdatascience.com/static-code-analysis-for-python-bdce10b8d287 Static code analysis in python
 - https://github.com/inasafe/inasafe/wiki/How-to-write-an-RFC RFC guide

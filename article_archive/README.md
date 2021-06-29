@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 29 June 2021
+- https://copilot.github.com/ OpenAI copilot - AI assisted code writing. Currently in limited beta for VSCode
 # 22 June 2021
 - https://github.com/Azure/AzureDatabricksBestPractices/blob/master/toc.md Best practices for Azure Databricks
 - https://www.zdnet.com/article/databricks-cofounders-next-act-shining-a-ray-on-compute-autoscaling/ Ray - Serverless autoscaling for ML model training aimed at python

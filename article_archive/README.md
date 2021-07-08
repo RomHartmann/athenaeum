@@ -6,6 +6,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 ---
 # 7 July 2021
 - https://github.com/jghoman/awesome-apache-airflow/blob/master/README.md A curated list of Airflow links. Very elaborate
+- https://www.confessionsofadataguy.com/deploying-apache-airflow-inside-kubernetes/ Lovely article describing accurately to deploy test airflow with docker postgres (on kubernetes, which can be local)
 # 29 June 2021
 - https://copilot.github.com/ OpenAI copilot - AI assisted code writing. Currently in limited beta for VSCode
 # 22 June 2021

@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 14 July 2021
+- https://godatadriven.com/blog/deploying-apache-airflow-on-azure-kubernetes-service/ Useful guide to Airflow on Azure K8s
 # 7 July 2021
 - https://github.com/jghoman/awesome-apache-airflow/blob/master/README.md A curated list of Airflow links. Very elaborate
 - https://www.confessionsofadataguy.com/deploying-apache-airflow-inside-kubernetes/ Lovely article describing accurately to deploy test airflow with docker postgres (on kubernetes, which can be local)

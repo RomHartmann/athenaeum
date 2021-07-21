@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 21 July 201
+- https://www.the-aks-checklist.com/#section-image-management Best practices for creating and maintaining a Kubernetes cluster
 # 14 July 2021
 - https://godatadriven.com/blog/deploying-apache-airflow-on-azure-kubernetes-service/ Useful guide to Airflow on Azure K8s
 # 7 July 2021

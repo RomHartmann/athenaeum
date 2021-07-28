@@ -4,7 +4,10 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
-# 21 July 201
+# 28 July 2021
+- https://mehighlow.medium.com/aks-kubenet-vs-azure-cni-363298dd53bf Good article explaining Azure CNI vs kubenet for AKS
+- https://docs.microsoft.com/en-us/azure/aks/configure-kubene Configuring kubenet for AKS
+# 21 July 2021
 - https://www.the-aks-checklist.com/#section-image-management Best practices for creating and maintaining a Kubernetes cluster
 # 14 July 2021
 - https://godatadriven.com/blog/deploying-apache-airflow-on-azure-kubernetes-service/ Useful guide to Airflow on Azure K8s

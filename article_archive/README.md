@@ -4,6 +4,10 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 25 August 2021
+- https://tsmatz.wordpress.com/2020/12/08/apache-spark-on-azure-kubernetes-service-aks/ A very useful guide for setting up spark on K8s
+- https://www.datamechanics.co/blog-post/optimized-spark-docker-images-now-available Lovely free docker images for spark to run on K8s
+- https://hub.docker.com/r/datamechanics/spark Pre-fabricated docker images from above article
 # 28 July 2021
 - https://mehighlow.medium.com/aks-kubenet-vs-azure-cni-363298dd53bf Good article explaining Azure CNI vs kubenet for AKS
 - https://docs.microsoft.com/en-us/azure/aks/configure-kubene Configuring kubenet for AKS

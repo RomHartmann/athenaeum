@@ -5,6 +5,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 
 ---
 # 25 August 2021
+- https://medium.com/@weshoffman/apache-spark-parquet-and-troublesome-nulls-28712b06f836 Nullable nightmare on spark and parquet
 - https://tsmatz.wordpress.com/2020/12/08/apache-spark-on-azure-kubernetes-service-aks/ A very useful guide for setting up spark on K8s
 - https://www.datamechanics.co/blog-post/optimized-spark-docker-images-now-available Lovely free docker images for spark to run on K8s
 - https://hub.docker.com/r/datamechanics/spark Pre-fabricated docker images from above article

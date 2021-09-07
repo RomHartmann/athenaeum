@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 7 September 2021
+- https://www.bloomberg.com/opinion/articles/2021-09-06/china-s-common-prosperity-goal-ends-in-a-middle-income-trap An opinion piece about the Chinese economy. "Ad hoc interventions ... may work at more basic levels of development... More advanced systems become too complex for command-and-control management by individuals. Systems are increasingly what matters. Rules that are transparent, predictable and fairly applied enable ... raising efficiency and allowing innovation to flourish."
 # 25 August 2021
 - https://medium.com/@weshoffman/apache-spark-parquet-and-troublesome-nulls-28712b06f836 Nullable nightmare on spark and parquet
 - https://tsmatz.wordpress.com/2020/12/08/apache-spark-on-azure-kubernetes-service-aks/ A very useful guide for setting up spark on K8s

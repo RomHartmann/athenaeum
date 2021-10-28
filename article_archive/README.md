@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 28 October 2021
+- https://github.com/pypa/pipx
 # 13 October 2021
 - https://www.toptal.com/python/an-introduction-to-mocking-in-python A good article on mock unittesting
 # 4 October 2021

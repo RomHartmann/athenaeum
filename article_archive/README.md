@@ -5,7 +5,8 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 
 ---
 # 28 October 2021
-- https://github.com/pypa/pipx
+- https://github.com/pypa/pipx pipx, executing pip packages in a scoped virtualenv
+- https://docs.npmjs.com/cli/v7/configuring-npm/folders where npm packages go and when to do what
 # 13 October 2021
 - https://www.toptal.com/python/an-introduction-to-mocking-in-python A good article on mock unittesting
 # 4 October 2021

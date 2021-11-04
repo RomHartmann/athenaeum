@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 4 November 2021
+- https://github.com/polterguy/magic An unusual local webapp based programming language that autogenerates (read magically) a lot of backend code (eg. in angular)
 # 28 October 2021
 - https://github.com/pypa/pipx pipx, executing pip packages in a scoped virtualenv
 - https://docs.npmjs.com/cli/v7/configuring-npm/folders where npm packages go and when to do what

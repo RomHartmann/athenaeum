@@ -5,6 +5,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 
 ---
 # 7 November 2021
+- https://blog.salesflare.com/how-to-split-startup-equity Setting up startup equity
 - https://www.kitchensoap.com/2012/10/25/on-being-a-senior-engineer/ Well written outline of what is meant by 'senior' engineer
 # 4 November 2021
 - https://github.com/polterguy/magic An unusual local webapp based programming language that autogenerates (read magically) a lot of backend code (eg. in angular)

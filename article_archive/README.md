@@ -5,6 +5,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 
 ---
 # 7 November 2021
+- https://medium.com/interviewnoodle/engineering-manager-as-an-architect-791362213a0b What and why engineering managers do
 - https://blog.salesflare.com/how-to-split-startup-equity Setting up startup equity
 - https://www.kitchensoap.com/2012/10/25/on-being-a-senior-engineer/ Well written outline of what is meant by 'senior' engineer
 # 4 November 2021

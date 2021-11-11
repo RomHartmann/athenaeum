@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 10 November 2021
+- https://www.founderlibrary.com/ Resources to help new founders. Has a wide selection.
 # 7 November 2021
 - https://medium.com/interviewnoodle/engineering-manager-as-an-architect-791362213a0b What and why engineering managers do
 - https://blog.salesflare.com/how-to-split-startup-equity Setting up startup equity

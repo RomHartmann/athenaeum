@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 13 November 2021
+- https://hbr.org/2016/03/learning-to-learn "The ability to learn faster.. may be the only sustainable competitive advantage". Aspiration (imagine how a new skillset could benefit you - Focus on benefits, not challenges), Self Awareness (Gather feedback and data for your assumptions), Curiosity (Change "I have to" to "I get to". Identify what you find boring and see if it's because you're unknowledgeable.), Vulnerability (focus on positivity of progress instead of negativity of being bad at something new)
 # 10 November 2021
 - https://www.founderlibrary.com/ Resources to help new founders. Has a wide selection.
 # 7 November 2021

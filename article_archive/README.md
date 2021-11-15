@@ -7,6 +7,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 # 15 November 2021
 - https://medium.com/@jordan_volz/whos-who-in-the-modern-data-stack-ecosystem-fall-2021-69d8b46b2e88 Modern Data stack. Nice diagram with recommendations for different class of tools. 
 - https://www.youtube.com/watch?v=XcCmMOWuAF4&list=WL&index=16&t=1s Good video with tips on how to prioritize time and create good habits around selecting the right thing to work on
+- https://avc.com/2010/08/what-a-ceo-does/ What does a CEO do? Strategy & vision, recruiting and ensuring the company has enough cash.
 # 13 November 2021
 - https://review.firstround.com/the-founders-guide-to-discipline-lessons-from-fronts-mathilde-collin  Discipline, focus, prioritisation and time management. 
 - https://hbr.org/2016/03/learning-to-learn "The ability to learn faster.. may be the only sustainable competitive advantage". Aspiration (imagine how a new skillset could benefit you - Focus on benefits, not challenges), Self Awareness (Gather feedback and data for your assumptions), Curiosity (Change "I have to" to "I get to". Identify what you find boring and see if it's because you're unknowledgeable.), Vulnerability (focus on positivity of progress instead of negativity of being bad at something new)

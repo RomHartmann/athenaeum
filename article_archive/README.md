@@ -12,6 +12,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 - http://www.effectiveengineer.com/blog/cardinal-sin-of-software-engineering Wisdom on rewriting code. "...think of code as having a half-life of 3-5 years....  design your software to scale by 10x, after which the best design will likely look quite different".  Never add features when rewriting. When rewriting, lean towards over-estimating.
 - https://review.firstround.com/Evernotes-CTO-on-Your-Biggest-Security-Worries-From-Three-Employees-to-300  Security things to be concerned about as a company scales from 3 > 10 > 30 > 100 > 300
 - https://beingfa.com/2016/12/13/the-cto-to-vp-engineering-fork/ CTO vs VP engineering
+- https://review.firstround.com/the-best-advice-we-overheard-at-first-rounds-cto-unconference Great advice for CTOs and VP Engs on building and running teams and tech. 
 # 13 November 2021
 - https://review.firstround.com/the-founders-guide-to-discipline-lessons-from-fronts-mathilde-collin  Discipline, focus, prioritisation and time management. 
 - https://hbr.org/2016/03/learning-to-learn "The ability to learn faster.. may be the only sustainable competitive advantage". Aspiration (imagine how a new skillset could benefit you - Focus on benefits, not challenges), Self Awareness (Gather feedback and data for your assumptions), Curiosity (Change "I have to" to "I get to". Identify what you find boring and see if it's because you're unknowledgeable.), Vulnerability (focus on positivity of progress instead of negativity of being bad at something new)

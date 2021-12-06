@@ -350,7 +350,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 # 6 June 2018
 - https://www.fightaging.org/ A blog by Aubrey de Grey's group
 - https://waitbutwhy.com/2016/03/cryonics.html Amazing article about why cryonics is a good idea.
-- https://medium.freecodecamp.org/ten-rules-for-negotiating-a-job-offer-ee17cccbdab6 How to negotiate a job offer
+- https://medium.freecodecamp.org/ten-rules-for-negotiating-a-job-offer-ee17cccbdab6 How to negotiate a job offer and how to engage with an interview process guide
 - https://blog.insightdatascience.com/anatomy-of-an-elasticsearch-cluster-part-i-7ac9a13b05db Anatomy of Elasticsearch engine
 
 # 5 June 2018

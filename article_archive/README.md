@@ -6,6 +6,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 ---
 # 13 December 2021
 - https://martinfowler.com/articles/data-monolith-to-mesh.html From data warehouse to data mesh
+- https://www.firebolt.io/blog/athena-vs-redshift-spectrum-vs-presto Good comparison for federated query engines (data virtualization)
 # 15 November 2021
 - https://medium.com/@jordan_volz/whos-who-in-the-modern-data-stack-ecosystem-fall-2021-69d8b46b2e88 Modern Data stack. Nice diagram with recommendations for different class of tools. 
 - https://www.youtube.com/watch?v=XcCmMOWuAF4&list=WL&index=16&t=1s Good video with tips on how to prioritize time and create good habits around selecting the right thing to work on

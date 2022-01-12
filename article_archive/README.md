@@ -5,6 +5,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 
 ---
 # 10 January 2021
+- https://www.chrisbehan.ca/posts/atomic-habits All about habits.
 - https://www.pnas.org/content/118/51/e2107848118 The rise and fall of rationality in Language - Around 1980 (and accellerated in 2007), frequency of fact-related words dropped while emotion-laden language surged
 # 13 December 2021
 - https://martinfowler.com/articles/data-monolith-to-mesh.html From data warehouse to data mesh

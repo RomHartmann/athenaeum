@@ -4,7 +4,9 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
-# 10 January 2021
+# 20 January 2022
+- https://moxie.org/2022/01/07/web3-first-impressions.html A quick rundown of web3
+# 10 January 2022
 - https://www.chrisbehan.ca/posts/atomic-habits All about habits.
 - https://www.pnas.org/content/118/51/e2107848118 The rise and fall of rationality in Language - Around 1980 (and accellerated in 2007), frequency of fact-related words dropped while emotion-laden language surged
 # 13 December 2021

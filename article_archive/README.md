@@ -6,6 +6,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 ---
 # 26 January 2022
 - https://www.confluent.io/blog/data-dichotomy-rethinking-the-way-we-treat-data-and-services/ A series on how to scale a data lifecycle for many human users and deployment lifecycles
+- https://martinfowler.com/articles/scaling-architecture-conversationally.html In line with 'Turn this ship around' "put the power to make decisions where the information is". This article argues that traditional architecture role is too rigid, and instead "Anyone can make an architecture decision, as long as they consult A) everyone who will be meaningfully impacted and B) people with expertise in the area of decision". Then all discussions must be documented to create accountability which acts as a 'brake'
 # 20 January 2022
 - https://moxie.org/2022/01/07/web3-first-impressions.html A quick rundown of web3
 # 10 January 2022

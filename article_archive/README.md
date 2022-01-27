@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 26 January 2022
+- https://www.confluent.io/blog/data-dichotomy-rethinking-the-way-we-treat-data-and-services/ A series on how to scale a data lifecycle for many human users and deployment lifecycles
 # 20 January 2022
 - https://moxie.org/2022/01/07/web3-first-impressions.html A quick rundown of web3
 # 10 January 2022

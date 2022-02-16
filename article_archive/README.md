@@ -5,7 +5,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 
 ---
 # 16 February 2022
-- http://www.paulgraham.com/wealth.html An essay with perspective on making money = building weath = creating something of value. Useful shorthand: "If you're in a job that feels safe, you are not going to get rich"
+- http://www.paulgraham.com/wealth.html An essay with fantastic perspective on startups. Making money = building weath = creating something of value. Many useful shoarhands:  "If you're in a job that feels safe, you are not going to get rich", "[to stay ahead of a large company] Start by picking a hard problem, and then at every decision point, take the harder choice.
 # 7 February 2022
 - https://daedtech.com/how-developers-stop-learning-rise-of-the-expert-beginner/  The expert beginner: Growth and improvement ceizes because of a belief that expert status has been reached and thus further improvement is not possible. Attributes include just wanting to do work that they are already good at and believing they are more expert than others judge them at and refusing to put in the effort to actually reach that stage. 
 # 26 January 2022

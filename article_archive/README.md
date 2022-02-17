@@ -16,6 +16,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 - https://moxie.org/2022/01/07/web3-first-impressions.html A quick rundown of web3
 # 10 January 2022
 - https://www.chrisbehan.ca/posts/atomic-habits All about habits.
+- https://daedtech.com/how-software-groups-rot-legacy-of-the-expert-beginner/ Expert Beginner - a natural conclusion of insular environments, low expectations, and ongoing rewards for mediocre and/or unquantifiable performances
 - https://www.pnas.org/content/118/51/e2107848118 The rise and fall of rationality in Language - Around 1980 (and accellerated in 2007), frequency of fact-related words dropped while emotion-laden language surged
 # 13 December 2021
 - https://martinfowler.com/articles/data-monolith-to-mesh.html From data warehouse to data mesh

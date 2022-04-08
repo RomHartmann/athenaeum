@@ -4,6 +4,10 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 7 April 2022
+- https://www.youtube.com/watch?v=qAws7eXItMk&t=711s&ab_channel=HowtoStartaStartup Talk on user feedback - With context on how to iterate
+- https://www.youtube.com/watch?v=MT4Ig2uqjTc&ab_channel=YCombinator Talk on user feedback - With examples for what questions to ask
+- https://www.youtube.com/watch?v=0LNQxT9LvM0&feature=youtu.be Talk on user feedback - With example of who to talk to
 # 16 February 2022
 - http://www.paulgraham.com/wealth.html An essay with fantastic perspective on startups. Making money = building weath = creating something of value. Many useful shoarhands:  "If you're in a job that feels safe, you are not going to get rich", "[to stay ahead of a large company] Start by picking a hard problem, and then at every decision point, take the harder choice. (If you have two choices, choose the harder)"
 # 7 February 2022

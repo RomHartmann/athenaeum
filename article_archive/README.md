@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 8 May 2022
+- https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS A nice explanation of CORS
 # 7 April 2022
 - https://www.youtube.com/watch?v=qAws7eXItMk&t=711s&ab_channel=HowtoStartaStartup Talk on user feedback - With context on how to iterate
 - https://www.youtube.com/watch?v=MT4Ig2uqjTc&ab_channel=YCombinator Talk on user feedback - With examples for what questions to ask

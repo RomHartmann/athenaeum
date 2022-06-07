@@ -4,6 +4,9 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 7 June 2022
+- https://luminousmen.com/post/spark-tips-partition-tuning Spark partition tuning
+- 
 # 8 May 2022
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS A nice explanation of CORS
 # 7 April 2022

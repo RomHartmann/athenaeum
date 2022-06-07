@@ -6,7 +6,6 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 ---
 # 7 June 2022
 - https://luminousmen.com/post/spark-tips-partition-tuning Spark partition tuning
-- 
 # 8 May 2022
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS A nice explanation of CORS
 # 7 April 2022

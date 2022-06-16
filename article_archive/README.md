@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 16 June 2022
+- https://alexdanco.com/2020/02/07/debt-is-coming/ Debt, VCs; speculation, bubble cycles. Development of the tech industry. 
 # 7 June 2022
 - https://luminousmen.com/post/spark-tips-partition-tuning Spark partition tuning
 # 8 May 2022

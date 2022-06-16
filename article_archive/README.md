@@ -19,9 +19,12 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 # 7 February 2022
 - https://daedtech.com/how-developers-stop-learning-rise-of-the-expert-beginner/  The expert beginner: Growth and improvement ceizes because of a belief that expert status has been reached and thus further improvement is not possible. Attributes include just wanting to do work that they are already good at and believing they are more expert than others judge them at and refusing to put in the effort to actually reach that stage. 
 # 26 January 2022
+- http://milinda.pathirage.org/kappa-architecture.com/ Append-only database as your source of truth
+- https://docs.microsoft.com/en-us/azure/architecture/data-guide/big-data/ A nice outline of big data architecture and the components that need to be serviced
 - https://blog.geoffralston.com/startup-priorities Starup priorities. Focus on whatever has the highest (breadth * depth)/cost, where breadth= number of users impacted, depth= impact of feature, cost= time/effort to complete feature. 
 - https://www.confluent.io/blog/data-dichotomy-rethinking-the-way-we-treat-data-and-services/ A series on how to build accessible shared data services. The argumen here is to use kafka as a central event store, and all services read and emit events back to the queue. All logic lives with the service, and everything is async. The source of truth is always the event log, and any DBs feeding off of that need to be reproducible from the log. 
 - https://martinfowler.com/articles/scaling-architecture-conversationally.html In line with 'Turn this ship around' "put the power to make decisions where the information is". This article argues that traditional architecture role is too rigid, and instead "Anyone can make an architecture decision, as long as they consult A) everyone who will be meaningfully impacted and B) people with expertise in the area of decision". Then all discussions must be documented (as ADRs, template included within) to create accountability which acts as a 'brake'.
+- https://martinfowler.com/articles/scaling-architecture-conversationally.html Scaling Architecture by conversationally by empowering people to make decisions within a framework of accountability
 # 20 January 2022
 - https://moxie.org/2022/01/07/web3-first-impressions.html A quick rundown of web3
 # 10 January 2022

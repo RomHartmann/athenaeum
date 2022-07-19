@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 19 July 2022
+- https://github.com/sudheerj/reactjs-interview-questions React interview questions. Also a great way to learn about React in a Q&A style. 
 # 25 June 2022
 - https://www.youtube.com/watch?v=Wi3PiZsIfBU&ab_channel=StanfordDecisionsandEthicsCenter Decision Analysis in Venture Capital
 # 16 June 2022

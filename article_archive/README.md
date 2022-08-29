@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 29 August 2022
+- https://sashachapin.substack.com/p/making-normal-conversations-better A nice article, especially for cerebral people, on things to be attentive to to have better conversations.
 # 19 July 2022
 - https://github.com/sudheerj/reactjs-interview-questions React interview questions. Also a great way to learn about React in a Q&A style. 
 # 25 June 2022

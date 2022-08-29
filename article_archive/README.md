@@ -5,6 +5,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 
 ---
 # 29 August 2022
+- https://engineerscanada.ca/become-an-engineer/use-of-professional-title-and-designations Canada does not allow "Software engineers" to call themselves "Engineer" without licensing. 
 - https://sashachapin.substack.com/p/making-normal-conversations-better A nice article, especially for cerebral people, on things to be attentive to to have better conversations.
 # 19 July 2022
 - https://github.com/sudheerj/reactjs-interview-questions React interview questions. Also a great way to learn about React in a Q&A style. 

@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 2 September 2022
+- https://overreacted.io/a-complete-guide-to-useeffect/ A deep dive into React useEffect
 # 29 August 2022
 - https://engineerscanada.ca/become-an-engineer/use-of-professional-title-and-designations Canada does not allow "Software engineers" to call themselves "Engineer" without licensing. 
 - https://sashachapin.substack.com/p/making-normal-conversations-better A nice article, especially for cerebral people, on things to be attentive to to have better conversations.

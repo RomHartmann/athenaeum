@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 6 September 2022
+- https://en.wikipedia.org/wiki/Unix_philosophy#Origin Philosophy of Unix. "Make each program do one thing well. Expect output of each program to become the input to another, yet unknown, program.  Write programs to handle universal data interface. Prototype early"
 # 2 September 2022
 - https://overreacted.io/a-complete-guide-to-useeffect/ A deep dive into React useEffect
 # 29 August 2022

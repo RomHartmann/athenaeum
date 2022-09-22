@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 22 September 2022
+- http://www.paulgraham.com/fr.html A great article about "Rules of fundraising"
 # 10 September 2022
 - https://www.youtube.com/watch?v=A_mstzRGfIE&ab_channel=DevoxxPoland Talk about Kafka, and what common mistakes are for an event-driven log-based architecture. 
 # 6 September 2022

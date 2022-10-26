@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 26 October 2022
+- https://sacks.substack.com/p/the-saas-org-chart Some example structured org chargs for SaaS companies at different stages of their growth. 
 # 27 September 2022
 - https://cpojer.net/posts/mastering-tech-lead-management Team lead - a mix between EM and IC - and how to balance it.
 # 22 September 2022

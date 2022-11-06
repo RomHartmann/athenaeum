@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 5 November 2022
+- https://www.rootstrap.com/blog/registration-and-authentication-in-django-apps-with-dj-rest-auth/ Difficult to read, but very helpful guide for how to set up dj-rest-auth with djang-allauth
 # 26 October 2022
 - https://sacks.substack.com/p/the-saas-org-chart Some example structured org chargs for SaaS companies at different stages of their growth. 
 # 27 September 2022

@@ -4,6 +4,9 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 8 November 2022
+- https://www.generalist.com/briefing/what-to-watch-in-ai Trends in AI, and what to watch in the space (written by VC)
+- https://leighmariebraswell.substack.com/p/overview-and-applications-of-large A list of AI companies breaking ground in various fields. Included are software engineering efforts.
 # 5 November 2022
 - https://www.rootstrap.com/blog/registration-and-authentication-in-django-apps-with-dj-rest-auth/ Difficult to read, but very helpful guide for how to set up dj-rest-auth with djang-allauth
 # 26 October 2022

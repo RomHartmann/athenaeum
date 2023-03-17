@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 16 March 2023
+- http://paulgraham.com/ds.html Do things that don't scale. A nice reminder things to pay attention to.
 # 6 January 2023
 - https://www.gutenberg.org/cache/epub/26184/pg26184-images.html Simple Sabotage field manual - A WW2 field manual for civilians to be as ineffective workers as possible without getting caught
 # 8 November 2022

@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 25 October 2023
+- https://jack-vanlightly.com/blog/2023/10/2/the-advantages-of-queues-on-logs Queues vs logs in a data context
 # 16 March 2023
 - http://paulgraham.com/ds.html Do things that don't scale. A nice reminder things to pay attention to.
 # 6 January 2023

@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 10 December 2023
+- https://collabfund.com/blog/a-few-laws-of-getting-rich/ An opinion piece about the subtle unexpected downsides of gaining wealth
 # 25 October 2023
 - https://jack-vanlightly.com/blog/2023/10/2/the-advantages-of-queues-on-logs Queues vs logs in a data context
 # 16 March 2023

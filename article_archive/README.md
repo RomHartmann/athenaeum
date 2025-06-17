@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 16 June 2025
+- https://www.wsj.com/lifestyle/careers/employee-performance-feedback-timing-of-day-b9425610?st=QvGgpm&mod=1440  Give feedback in the morning and in the middle of the week. 
 # 21 March 2024
 - https://blog.samaltman.com/what-i-wish-someone-had-told-me  Sam Altman's list of hindsight wisdom
 # 10 December 2023

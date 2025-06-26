@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 25 June 2025
+- https://www.youtube.com/watch?v=LCEmiRjPEtQ  I like this presentation because he covers a large swath of AI - how we make it part of a product, as well as how to build the product - in a way that runs extremely close to how I see things. But articulated very nicely.
 # 16 June 2025
 - https://www.wsj.com/lifestyle/careers/employee-performance-feedback-timing-of-day-b9425610?st=QvGgpm&mod=1440  Give feedback in the morning and in the middle of the week. 
 # 21 March 2024

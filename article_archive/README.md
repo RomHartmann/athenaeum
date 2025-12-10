@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 10 Dec 2025
+- https://www.youtube.com/watch?v=qImgGtnNbx0&list=WL&index=56 Top notch product designer/builder interview
 # 10 Nov 2025
 - https://www.marktechpost.com/2025/11/08/anthropic-turns-mcp-agents-into-code-first-systems-with-code-execution-with-mcp-approach/  Infrastructure ideas for more efficient MCP
 - https://github.com/GibsonAI/memori  Cheap-to-implement memory tool for LLMs

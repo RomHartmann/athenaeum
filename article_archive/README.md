@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 3 Feb 2026
+- https://venturebeat.com/security/openclaw-agentic-ai-security-risk-ciso-guide Security concerns with OpenClaw and agents like it. 
 # 10 Dec 2025
 - https://www.youtube.com/watch?v=qImgGtnNbx0&list=WL&index=56 Top notch product designer/builder interview
 # 10 Nov 2025

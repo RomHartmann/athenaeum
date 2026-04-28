@@ -6,6 +6,7 @@ This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr,
 ---
 # 25 April 2026
 - https://www.youtube.com/watch?v=v4F1gFy-hqg - Writing good code in the age of coding agents - with coding fundamentals
+- https://www.youtube.com/watch?v=mtiOK2QG9Q0 - another pretty good overview of components of harnesses
 # 3 Feb 2026
 - https://venturebeat.com/security/openclaw-agentic-ai-security-risk-ciso-guide Security concerns with OpenClaw and agents like it. 
 # 10 Dec 2025

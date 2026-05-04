@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 1 May 2026
+- https://x.com/shahrathin/status/2049370858603618788?s=46&t=WQ1ck1BlQoSF0Z0vZI1SJw - what is hot in ai investing right now
 # 25 April 2026
 - https://www.youtube.com/watch?v=v4F1gFy-hqg - Writing good code in the age of coding agents - with coding fundamentals
 - https://www.youtube.com/watch?v=mtiOK2QG9Q0 - another pretty good overview of components of harnesses

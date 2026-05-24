@@ -4,6 +4,8 @@ A collection of articles with short descriptions to them.  Articles are generall
 This is totally a copy of https://github.com/sderosiaux/every-single-day-i-tldr, but for my own reference.
 
 ---
+# 24 May 2026
+- https://github.com/google/adk-samples/tree/main/python/agents - Google published library of agents and their workflows
 # 1 May 2026
 - https://x.com/shahrathin/status/2049370858603618788?s=46&t=WQ1ck1BlQoSF0Z0vZI1SJw - what is hot in ai investing right now
 # 25 April 2026
